@@ -1,3 +1,5 @@
+###### [Introduction](README.md) > **Style Guide**
+
 # Style Guide
 
 ## Colors
@@ -35,3 +37,5 @@
     box-shadow:
               1px 2px 10px rgba(0, 0, 0, 0.08),
               2px 12px 20px rgba(0, 0, 0, 0.1);
+
+**[Click here](README.md)** to return to Introduction Page.
