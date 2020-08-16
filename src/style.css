@@ -1,0 +1,155 @@
+/* --------------------------------------- */
+/*               reset                */
+/* --------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+/* the basic */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------- */
+/*             END: reset             */
+/* --------------------------------------- */
+
+/* --------------------------------------- */
+/*           GLOBAL ELEMENTS           */
+/* --------------------------------------- */
+
+/* ------------- color scheme ------------ */
+:root {
+  /* primary */
+  --cl_primary_1: #ef4857;
+  --cl_primary_2: #072e50;
+  --cl_primary_3: #fafafa;
+  /* secondary */
+  --clr_secondary_1: #35526a;
+  --clr_secondary_2: #7e9eba;
+  --clr_secondary_3: #0e0e0e;
+  --clr_secondary_4: #c4c4c4;
+}
+
+/* ---------- END: color scheme ---------- */
+
+/* -------------- typography ------------- */
+
+/* text padding */
+:root {
+  --title-padding-bottom: 1.2rem;
+  --content-padding-bottom: 0.6rem;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+header > nav,
+.title,
+.subtitle,
+.call-to-actions {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.title,
+.subtitle {
+  line-height: 1;
+}
+.title {
+  font-size: clamp(38px, 5vw, 72px);
+  font-weight: 700;
+  padding-bottom: var(--title-padding-bottom);
+}
+.subtitle {
+  font-weight: 400;
+  padding-bottom: var(--content-padding-bottom);
+}
+/* ----------- END: typography ----------- */
+
+/* --------------- buttons --------------- */
+/* btn-variables*/
+:root {
+  --btn-drop-shadow: 1px 2px 10px rgba(0, 0, 0, 0.08),
+    2px 12px 20px rgba(0, 0, 0, 0.1);
+  --btn-border-radius: 5px;
+  --btn-background: var(--cl_primary_1);
+  --btn-background-hover: #fafafa;
+  --btn-color: var(--cl_primary_2);
+  --btn-color-hover: #000000;
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+/* button:focus { 
+} 
+*/
+.btn-primary,
+.btn-secondary {
+  box-shadow: var(--btn-drop-shadow);
+  border-radius: var(--btn-border-radius);
+  padding: 0.8rem 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.btn-primary {
+  background-color: var(--btn-background);
+  color: var(--btn-color);
+}
+
+.container {
+  /* NOTE: this container should be used to wrapp
+  the content only; wrapping the whole section may
+  cause undesired horizontal shrink */
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* --------------------------------------- */
+/*          END: GLOBAL ELEMENTS        */
+/* --------------------------------------- */
+
+/* --------------------------------------- */
+/*              SECTIONS              */
+/* --------------------------------------- */
+
+/* -------------- navigation ------------- */
+/* NOTE: nav styling goes here */
+
+/* ----------- END: navigation ----------- */
+
+/* ----------------- hero ---------------- */
+/* NOTE: hero styling goes here */
+
+/* -------------- END: hero -------------- */
+
+/* --------------- features -------------- */
+/* NOTE: features styling goes here */
+
+/* ------------ END: features ------------ */
+
+/* ------------- social proof ------------ */
+/* NOTE: social proof styling goes here */
+
+/* ---------- END: social proof ---------- */
+
+/* --------------- contact --------------- */
+/* NOTE: contact styling goes here */
+
+/* ------------- END: contact ------------ */
+
+/* ---------------- footer --------------- */
+/* NOTE: footer styling goes here */
+
+/* ------------- END: footer ------------- */
+
+/* --------------------------------------- */
+/*            END: SECTIONS            */
+/* --------------------------------------- */
