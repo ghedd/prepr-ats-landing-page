@@ -190,6 +190,9 @@ header {
   padding: 0 0.5rem;
   position: relative;
 }
+.nav-link:first-of-type {
+  padding-left: 0;
+}
 
 .nav-link:hover,
 .nav-link:focus,
