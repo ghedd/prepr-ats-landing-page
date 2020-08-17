@@ -24,9 +24,9 @@
 /* ------------- color scheme ------------ */
 :root {
   /* primary */
-  --cl-primary-1: #ef4857;
-  --cl-primary-2: #072e50;
-  --cl-primary-3: #fafafa;
+  --clr-primary-1: #ef4857;
+  --clr-primary-2: #072e50;
+  --clr-primary-3: #fafafa;
   /* secondary */
   --clr-secondary-1: #35526a;
   --clr-secondary-2: #7e9eba;
