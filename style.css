@@ -77,9 +77,9 @@ header > nav,
   --btn-drop-shadow: 1px 2px 10px rgba(0, 0, 0, 0.08),
     2px 12px 20px rgba(0, 0, 0, 0.1);
   --btn-border-radius: 5px;
-  --btn-background: var(--cl-primary-1);
+  --btn-background: var(--clr-primary-1);
   --btn-background-hover: #fafafa;
-  --btn-color: var(--cl-primary-2);
+  --btn-color: var(--clr-primary-2);
   --btn-color-hover: #000000;
 }
 button {
