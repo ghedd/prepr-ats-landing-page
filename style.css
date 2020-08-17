@@ -112,6 +112,13 @@ button {
   margin: 0 auto;
 }
 
+.section-divider {
+  display: block;
+  margin: 0 auto 0.6rem;
+  height: 5px;
+  width: 50px;
+  background-color: var(--cl_primary_3);
+}
 /* --------------------------------------- */
 /*          END: GLOBAL ELEMENTS        */
 /* --------------------------------------- */
@@ -131,8 +138,50 @@ button {
 /* -------------- END: hero -------------- */
 
 /* --------------- features -------------- */
-/* NOTE: features styling goes here */
+#features {
+  background-color: var(--clr_secondary_1);
+  color: var(--cl_primary_3);
+  text-align: center;
+  padding: 40px 0;
+}
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin: 75px 40px;
+}
+
+.feature-item {
+  width: 250px;
+  margin: 0 auto;
+  padding: 0 25px;
+  display: inline-block;
+  
+}
+
+.feature-icon {
+  display: inline-block;
+  background-color: var(--cl_primary_2);
+  color: var(--cl_primary_1);
+  text-align: center;
+  vertical-align: middle;
+  font-size: 4rem;
+  height: 100px;
+  width: 100px;
+  padding-top: 4px; /* idk why this is necessary for proper vertical alignment but it'll be fixed when we import actual icons */
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.feature-title {
+  font-weight: 700;
+}
+
+.feature-description {
+  font-weight: 400;
+}
 /* ------------ END: features ------------ */
 
 /* ------------- social proof ------------ */
