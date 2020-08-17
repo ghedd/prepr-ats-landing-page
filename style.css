@@ -49,6 +49,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.5;
+  font-size: clamp(16px, 1.2vw, 18px);
 }
 header > nav,
 .title,
@@ -77,10 +78,10 @@ header > nav,
   --btn-drop-shadow: 1px 2px 10px rgba(0, 0, 0, 0.08),
     2px 12px 20px rgba(0, 0, 0, 0.1);
   --btn-border-radius: 5px;
-  --btn-background: var(--cl-primary-1);
-  --btn-background-hover: #fafafa;
-  --btn-color: var(--cl-primary-2);
-  --btn-color-hover: #000000;
+  --btn-background: var(--clr-primary-1);
+  --btn-background-hover: var(--clr-secondary-1);
+  --btn-color: var(--clr-primary-2);
+  --btn-color-hover: var(--clr-primary-3);
 }
 button {
   outline: none;
@@ -97,11 +98,15 @@ button {
   padding: 0.8rem 1.6rem;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 .btn-primary {
   background-color: var(--btn-background);
   color: var(--btn-color);
+  transition: all 0.2s ease-out;
+}
+.btn-primary:hover {
+  color: var(--btn-color-hover);
 }
 
 .container {
@@ -109,6 +114,7 @@ button {
   the content only; wrapping the whole section may
   cause undesired horizontal shrink */
   max-width: 1600px;
+  width: calc(100% - 2rem);
   margin: 0 auto;
 }
 
@@ -122,6 +128,135 @@ button {
 
 /* -------------- navigation ------------- */
 /* NOTE: nav styling goes here */
+
+header {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  /*   padding-top: 0.7rem; */
+  /*   set height to make site-nav overflow */
+  /*   for better background color control */
+  max-height: 60px;
+
+  background: var(--clr-primary-1);
+  box-shadow: 0px 11px 18px -1px rgba(0, 0, 0, 0.1),
+    0px 11px 29px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  grid-template-rows: minmax(auto, 60px) minmax(auto, 1fr);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* navigation grid layout */
+.header__brand,
+.header__burger-btn,
+.header__site-nav {
+  grid-row: 1/2;
+}
+.header__brand {
+  grid-column: 1/2;
+}
+.header__burger-btn {
+  grid-column: 3/-1;
+}
+.header__site-nav {
+  grid-column: 2/3;
+}
+/* end: navigation grid layout */
+
+.nav-link {
+  text-decoration: none;
+  color: var(--clr-primary-2);
+}
+
+/* burger btn */
+.header__burger-btn {
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-self: right;
+  align-self: center;
+  max-width: 40px;
+  width: 100%;
+  max-height: 30px;
+  height: 100%;
+  cursor: pointer;
+  padding: 0.3rem 0;
+  border: none;
+  background: none;
+  border-radius: 3px;
+  transition: all 0.1s linear;
+}
+
+.burger-btn__stick {
+  display: block;
+  height: 2px;
+  width: 25px;
+  background-color: var(--clr-primary-2);
+}
+
+.burger-btn__stick:nth-of-type(2n) {
+  margin: auto 0;
+}
+
+/* end: burger btn */
+
+.header__site-nav-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav-item {
+  text-align: right;
+  position: relative;
+  font-family: "Roboto Condensed", san-serif;
+  font-weight: 700;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 1.2rem 0;
+  width: 100%;
+  transition: background-color 0.2s ease;
+  z-index: 20;
+}
+
+/* responsive breakpoint */
+
+@media only screen and (max-width: 960px) {
+  .header__burger-btn {
+    display: flex;
+  }
+  .header__site-nav {
+    height: 0;
+    opacity: 1;
+    pointer-events: none;
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+    position: relative;
+  }
+  .header__site-nav::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin: 0 calc(-50vw + 50%);
+    height: 100%;
+    background: var(--clr-primary-1);
+  }
+  .header__site-nav-group {
+    flex-direction: column;
+  }
+  .header__nav-item {
+    text-align: center;
+  }
+}
 
 /* ----------- END: navigation ----------- */
 
