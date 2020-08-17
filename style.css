@@ -24,14 +24,14 @@
 /* ------------- color scheme ------------ */
 :root {
   /* primary */
-  --cl_primary_1: #ef4857;
-  --cl_primary_2: #072e50;
-  --cl_primary_3: #fafafa;
+  --cl-primary-1: #ef4857;
+  --cl-primary-2: #072e50;
+  --cl-primary-3: #fafafa;
   /* secondary */
-  --clr_secondary_1: #35526a;
-  --clr_secondary_2: #7e9eba;
-  --clr_secondary_3: #0e0e0e;
-  --clr_secondary_4: #c4c4c4;
+  --clr-secondary-1: #35526a;
+  --clr-secondary-2: #7e9eba;
+  --clr-secondary-3: #0e0e0e;
+  --clr-secondary-4: #c4c4c4;
 }
 
 /* ---------- END: color scheme ---------- */
@@ -77,9 +77,9 @@ header > nav,
   --btn-drop-shadow: 1px 2px 10px rgba(0, 0, 0, 0.08),
     2px 12px 20px rgba(0, 0, 0, 0.1);
   --btn-border-radius: 5px;
-  --btn-background: var(--cl_primary_1);
+  --btn-background: var(--cl-primary-1);
   --btn-background-hover: #fafafa;
-  --btn-color: var(--cl_primary_2);
+  --btn-color: var(--cl-primary-2);
   --btn-color-hover: #000000;
 }
 button {
