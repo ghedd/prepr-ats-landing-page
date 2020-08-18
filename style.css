@@ -143,6 +143,27 @@ button {
 /* --------------- contact --------------- */
 /* NOTE: contact styling goes here */
 
+/* Floating column for inputs: 75% width */
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-50 {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 /* ------------- END: contact ------------ */
 
 /* ---------------- footer --------------- */
