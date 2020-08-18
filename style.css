@@ -149,49 +149,46 @@ button {
 footer {
   background-color: var(--cl_primary_2);
   color: var(--cl_primary_3);
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 
 .footer__contact-list {
-
+  width: 600px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .footer__contact-item {
-
+  text-align: left
 }
 
-..footer__contact-item-title {
-
-}
-
-.footer__contact-item-detail {
-
+.footer__contact-item-title {
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .footer__contact-item-divider {
-
-}
-
-.footer__socials-list {
-
+  display: block;
+  margin: 0 auto 0.6rem;
+  height: 100px;
+  width: 3px;
+  background-color: var(--clr_secondary_1);
 }
 
 .footer__socials-item {
   display: inline-block;
-  padding: 10px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: var(--cl_primary_1);
 }
 
 .footer__socials-icon {
+  margin: 25px 5px;
   height: 35px;
   width: 35px;
-  padding: 5px;
 }
 
 .footer__copyright {
-
+  font-size: 0.8rem;
 }
 /* ------------- END: footer ------------- */
 
