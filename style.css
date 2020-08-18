@@ -157,6 +157,7 @@ footer {
 .footer__contact-list {
   width: 600px;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 
@@ -189,6 +190,19 @@ footer {
 
 .footer__copyright {
   font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .footer__contact-item {
+    display: block;
+    width: 100%;
+
+    margin: 0px 40px 40px;
+  }
+
+  .footer__contact-item-divider {
+    display: none;
+  }
 }
 /* ------------- END: footer ------------- */
 
