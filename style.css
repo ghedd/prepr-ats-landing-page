@@ -53,6 +53,7 @@ body {
 header > nav,
 .title,
 .subtitle,
+.section-title,
 .call-to-actions {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -68,6 +69,10 @@ header > nav,
 .subtitle {
   font-weight: 400;
   padding-bottom: var(--content-padding-bottom);
+}
+
+.section-title {
+  font-size: 28px;
 }
 /* ----------- END: typography ----------- */
 
@@ -142,7 +147,7 @@ button {
   background-color: var(--clr_secondary_1);
   color: var(--cl_primary_3);
   text-align: center;
-  padding: 40px 0;
+  padding: 40px 75px;
 }
 
 .features-list {
@@ -150,36 +155,37 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
-  margin: 75px 40px;
+  padding: 30px 0;
 }
 
 .feature-item {
   width: 250px;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 0 25px;
   display: inline-block;
-  
 }
 
-.feature-icon {
+.feature-icon, .car-icon {
   display: inline-block;
   background-color: var(--cl_primary_2);
-  color: var(--cl_primary_1);
-  text-align: center;
-  vertical-align: middle;
-  font-size: 4rem;
-  height: 100px;
-  width: 100px;
-  padding-top: 4px; /* idk why this is necessary for proper vertical alignment but it'll be fixed when we import actual icons */
+  height: 175px;
+  width: 175px;
   border-radius: 50%;
   margin-bottom: 25px;
+  padding: 25px;
+}
+
+.car-icon {
+  padding-bottom: 30px;
 }
 
 .feature-title {
+  font-size: 22px;
   font-weight: 700;
 }
 
 .feature-description {
+  font-size: 18px;
   font-weight: 400;
 }
 /* ------------ END: features ------------ */
