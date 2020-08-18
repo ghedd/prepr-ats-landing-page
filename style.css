@@ -109,6 +109,9 @@ button {
   color: var(--btn-color);
 }
 
+.link-button {
+  text-decoration: none;
+}
 .container {
   /* NOTE: this container should be used to wrapp
   the content only; wrapping the whole section may
