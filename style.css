@@ -146,8 +146,53 @@ button {
 /* ------------- END: contact ------------ */
 
 /* ---------------- footer --------------- */
-/* NOTE: footer styling goes here */
+footer {
+  background-color: var(--cl_primary_2);
+  color: var(--cl_primary_3);
+}
 
+.footer__contact-list {
+
+}
+
+.footer__contact-item {
+
+}
+
+..footer__contact-item-title {
+
+}
+
+.footer__contact-item-detail {
+
+}
+
+.footer__contact-item-divider {
+
+}
+
+.footer__socials-list {
+
+}
+
+.footer__socials-item {
+  display: inline-block;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--cl_primary_1);
+}
+
+.footer__socials-icon {
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+}
+
+.footer__copyright {
+
+}
 /* ------------- END: footer ------------- */
 
 /* --------------------------------------- */
