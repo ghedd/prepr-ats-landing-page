@@ -8,8 +8,11 @@
       content="Tired of waiting in long queues? Admin COVID-19, it is not safe to stay in the crowd for too long. Let Ezline help you!"
     />
     <title>Avocado Toast Squad</title>
-    <link rel="stylesheet" href="./style.css" />
+
     <script src="https://kit.fontawesome.com/205daffa64.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
     <header class="header">
@@ -85,7 +88,79 @@
       </div>
       <a class="link-button btn-primary call-to-actions" href="#contact">GET STARTED</a>
     </section>
-    <section id="social-proof"></section>
+    
+    <section id="social-proof" class="social">
+      <div class="carousel container">
+        <button
+          id="carousel-btn-left"
+          class="carousel__btn carousel__btn--left carousel__btn--is-hidden"
+        >
+          <span class="angle angle--left"></span>
+        </button>
+
+        <button
+          id="carousel-btn-right"
+          class="carousel__btn carousel__btn--right"
+        >
+          <span class="angle angle--right"></span>
+        </button>
+
+        <div class="carousel__track-warpper">
+          <ul class="carousel__track">
+            <li class="carousel__slide carousel__slide--current">
+              <span class="title comment__title">This is too much</span>
+              <p class="content comment__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                alias, veniam quam dolore neque consequatur fuga? Nesciunt ut ex
+                dolor veniam aut saepe enim blanditiis nulla, libero ea fugit
+                iure!
+              </p>
+              <img
+                src="./assets/images/darshan-patel-portrait.jpg"
+                alt="A portrait of commenter"
+                class="comment__author-photo"
+              />
+              <span class="comment__author-name">Darshan</span>
+            </li>
+            <li class="carousel__slide">
+              <span class="title comment__title">That is too bad!</span>
+              <p class="content comment__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                alias, veniam quam dolore neque consequatur fuga? Nesciunt ut ex
+                dolor veniam aut saepe enim blanditiis nulla, libero ea fugit
+                iure!
+              </p>
+              <img
+                src="./assets/images/foto-sushi-portrait.jpg"
+                alt="A portrait of commenter"
+                class="comment__author-photo"
+              />
+              <span class="comment__author-name">John</span>
+            </li>
+            <li class="carousel__slide">
+              <span class="title comment__title">We need a solution</span>
+              <p class="content comment__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                alias, veniam quam dolore neque consequatur fuga? Nesciunt ut ex
+                dolor veniam aut saepe enim blanditiis nulla, libero ea fugit
+                iure!
+              </p>
+              <img
+                src="./assets/images/harps-joseph-portrait.jpg"
+                alt="A portrait of commenter"
+                class="comment__author-photo"
+              />
+              <span class="comment__author-name">Josheph</span>
+            </li>
+          </ul>
+        </div>
+        <div class="carousel__nav-panel">
+          <button class="nav-panel__dot nav-panel__dot--active"></button>
+          <button class="nav-panel__dot"></span>
+          <button class="nav-panel__dot"></span>
+        </div>
+      </div>
+    </section>
     <section id="contact"></section>
     <footer></footer>
     <script src="/main.js"></script>
