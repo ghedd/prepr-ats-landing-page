@@ -631,8 +631,64 @@ header {
 /* ------------- END: contact ------------ */
 
 /* ---------------- footer --------------- */
-/* NOTE: footer styling goes here */
+footer {
+  background-color: var(--cl_primary_2);
+  color: var(--cl_primary_3);
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
 
+.footer__contact-list {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer__contact-item {
+  text-align: left
+}
+
+.footer__contact-item-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.footer__contact-item-divider {
+  display: block;
+  margin: 0 auto 0.6rem;
+  height: 100px;
+  width: 3px;
+  background-color: var(--clr_secondary_1);
+}
+
+.footer__socials-item {
+  display: inline-block;
+}
+
+.footer__socials-icon {
+  margin: 25px 5px;
+  height: 35px;
+  width: 35px;
+}
+
+.footer__copyright {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .footer__contact-item {
+    display: block;
+    width: 100%;
+
+    margin: 0px 40px 40px;
+  }
+
+  .footer__contact-item-divider {
+    display: none;
+  }
+}
 /* ------------- END: footer ------------- */
 
 /* --------------------------------------- */
