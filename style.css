@@ -87,9 +87,15 @@ header > nav,
     2px 12px 20px rgba(0, 0, 0, 0.1);
   --btn-border-radius: 5px;
   --btn-background: var(--clr-primary-1);
+<<<<<<< HEAD
   --btn-background-hover: var(--clr-secondary-1);
   --btn-color: var(--clr-primary-2);
   --btn-color-hover: var(--clr-primary-3);
+=======
+  --btn-background-hover: #fafafa;
+  --btn-color: var(--clr-primary-2);
+  --btn-color-hover: #000000;
+>>>>>>> develop
 }
 button {
   outline: none;
