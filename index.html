@@ -12,8 +12,38 @@
     <script src="https://kit.fontawesome.com/205daffa64.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <nav></nav>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__brand">
+          <a href="#" class="nav-link">brand</a>
+        </div>
+        <button
+          id="burger-btn"
+          class="header__burger-btn"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="burger-btn__stick"></span>
+          <span class="burger-btn__stick"></span>
+          <span class="burger-btn__stick"></span>
+        </button>
+        <nav id="site-nav" class="header__site-nav">
+          <ul class="header__site-nav-group">
+            <li class="header__nav-item">
+              <a href="#" class="nav-link">home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="nav-link">features</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="nav-link">contact</a>
+            </li>
+            <li class="header__nav-item">
+              <button class="btn-primary btn-primary__nav-item">sign up</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section id="hero">
       <div class="container">
