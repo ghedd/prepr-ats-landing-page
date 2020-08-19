@@ -1,3 +1,7 @@
+/* --------------------------------------- */
+/*                navigation               */
+/* --------------------------------------- */
+
 const burgerBtn = document.getElementById("burger-btn");
 
 function toggleSiteNav({ target }) {
