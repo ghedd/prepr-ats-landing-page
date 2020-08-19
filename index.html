@@ -8,25 +8,185 @@
       content="Tired of waiting in long queues? Admin COVID-19, it is not safe to stay in the crowd for too long. Let Ezline help you!"
     />
     <title>Avocado Toast Squad</title>
-    <link rel="stylesheet" href="./style.css" />
+
+
+    <script src="https://kit.fontawesome.com/205daffa64.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
-    <header>
-      <nav></nav>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__brand">
+          <a href="#" class="nav-link">brand</a>
+        </div>
+        <button
+          id="burger-btn"
+          class="header__burger-btn"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="burger-btn__stick"></span>
+          <span class="burger-btn__stick"></span>
+          <span class="burger-btn__stick"></span>
+        </button>
+        <nav id="site-nav" class="header__site-nav">
+          <ul class="header__site-nav-group">
+            <li class="header__nav-item">
+              <a href="#" class="nav-link">home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="nav-link">features</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="nav-link">contact</a>
+            </li>
+            <li class="header__nav-item">
+              <button class="btn-primary btn-primary__nav-item">sign up</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section id="hero">
       <div class="container">
-        <h1 class="title">Hello World</h1>
+        <img src="heropic.jpg">
+        <h1 class="title">We can do better than this</h1>
+        <h4 class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porta sagittis, pellentesque cras mauris. Condimentum purus quisque quis odio suspendisse enim quis arcu lacus. Feugiat in et arcu felis egestas.</h4>
         <button class="btn-primary">find out more</button>
       </div>
     </section>
-    <section id="features"></section>
+
+    <section id="features">
+      <span class="section-divider"></span>
+      <h2 class="section-title">WHAT WE OFFER</h2>
+      <div class="features-list">
+        <div class="feature-item">
+          <img class="feature-icon" src="./assets/check-icon.svg" alt="check mark icon" />
+          <h3 class="feature-title">
+            Efficiency
+          </h3>
+          <h4 class="feature-description">
+            Our queue management software is streamlined to help you achieve better store performance and keep those customers rolling in.
+          </h4>
+        </div>
+        <div class="feature-item">
+          <img class="feature-icon car-icon" src="./assets/car-icon.svg" alt="car icon" />
+          <h3 class="feature-title">
+            Comfort
+          </h3>
+          <h4 class="feature-description">
+            Put your customers at ease, letting them queue up from the safety and comfort of their car or the cafe across the street.
+          </h4>
+        </div>
+        <div class="feature-item">
+          <img class="feature-icon" src="./assets/chart-icon.svg" alt="chart icon" />
+          <h3 class="feature-title">
+            Analytics
+          </h3>
+          <h4 class="feature-description">
+            We can provide analytics through guest queues and provide real-time information to help you manage your business.
+          </h4>
+        </div>
+      </div>
+      <a class="link-button btn-primary call-to-actions" href="#contact">GET STARTED</a>
+    </section>
+    
+    <section id="social-proof" class="social">
+      <div class="carousel container">
+        <button
+          id="carousel-btn-left"
+          class="carousel__btn carousel__btn--left carousel__btn--is-hidden"
+        >
+          <span class="angle angle--left"></span>
+        </button>
+
+        <button
+          id="carousel-btn-right"
+          class="carousel__btn carousel__btn--right"
+        >
+          <span class="angle angle--right"></span>
+        </button>
+
+        <div class="carousel__track-warpper">
+          <ul class="carousel__track">
+            <li class="carousel__slide carousel__slide--current">
+              <span class="title comment__title">This is too much</span>
+              <p class="content comment__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                alias, veniam quam dolore neque consequatur fuga? Nesciunt ut ex
+                dolor veniam aut saepe enim blanditiis nulla, libero ea fugit
+                iure!
+              </p>
+              <img
+                src="./assets/images/darshan-patel-portrait.jpg"
+                alt="A portrait of commenter"
+                class="comment__author-photo"
+              />
+              <span class="comment__author-name">Darshan</span>
+            </li>
+            <li class="carousel__slide">
+              <span class="title comment__title">That is too bad!</span>
+              <p class="content comment__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                alias, veniam quam dolore neque consequatur fuga? Nesciunt ut ex
+                dolor veniam aut saepe enim blanditiis nulla, libero ea fugit
+                iure!
+              </p>
+              <img
+                src="./assets/images/foto-sushi-portrait.jpg"
+                alt="A portrait of commenter"
+                class="comment__author-photo"
+              />
+              <span class="comment__author-name">John</span>
+            </li>
+            <li class="carousel__slide">
+              <span class="title comment__title">We need a solution</span>
+              <p class="content comment__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                alias, veniam quam dolore neque consequatur fuga? Nesciunt ut ex
+                dolor veniam aut saepe enim blanditiis nulla, libero ea fugit
+                iure!
+              </p>
+              <img
+                src="./assets/images/harps-joseph-portrait.jpg"
+                alt="A portrait of commenter"
+                class="comment__author-photo"
+              />
+              <span class="comment__author-name">Josheph</span>
+            </li>
+          </ul>
+        </div>
+        <div class="carousel__nav-panel">
+          <button class="nav-panel__dot nav-panel__dot--active"></button>
+          <button class="nav-panel__dot"></span>
+          <button class="nav-panel__dot"></span>
+        </div>
+      </div>
+    </section>
+     <section id="features"></section>
     <section id="social-proof"></section>
     <section id="contact">
-
-
-
+      <div class="container">
+        <img src="contactpic.jpg">
+        <h2 class="section-title">GET IN TOUCH</h2>
+        <div class="row">
+          <div class="col-50">
+            <input type="text" id="name" name="name" placeholder="Name">
+          </div>
+          <div class="col-50">
+            <input type="text" id="email" name="email" placeholder="Email">
+          </div>
+        </div>
+        <button class="btn-primary">Contact Us</button>
+        <h4 class="feature-description">
+          We'll get in touch with you as soon as we can
+        </h4>
+      </div>
     </section>
+
+     </section>
     <footer>
       <div class="footer__contact-list">
         <div class="footer__contact-item">
