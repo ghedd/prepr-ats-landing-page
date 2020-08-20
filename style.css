@@ -70,9 +70,6 @@ body {
   line-height: 1.5;
   font-size: clamp(16px, 1.2vw, 18px);
   scroll-behavior: smooth;
-}
-
-body {
   overflow-x: hidden;
 }
 
@@ -383,7 +380,7 @@ header {
 
   [aria-expanded="false"] ~ nav {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    opacity: 0;
+    display: none;
     pointer-events: none;
   }
 
@@ -531,7 +528,7 @@ header {
   background-color: transparent;
   object-fit: cover;
   position: absolute;
-  z-index: 100;
+  z-index: 10;
 }
 .carousel__btn:focus {
   outline: 1px dotted var(--clr-primary-3);
