@@ -408,6 +408,7 @@ header {
   background-attachment: fixed;
   min-height: 100vh;
   position: relative;
+  z-index: -1;
 }
 .hero-usp {
   min-height: 40vh;
