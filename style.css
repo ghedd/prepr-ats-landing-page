@@ -609,6 +609,7 @@ header {
 .comment__content,
 .comment__author-name {
   color: var(--clr-primary-3);
+  text-align: center;
 }
 .comment__title,
 .comment__author-name {
