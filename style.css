@@ -69,13 +69,18 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: clamp(16px, 1.2vw, 18px);
+  scroll-behavior: smooth;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 header > nav,
 .title,
 .subtitle,
 .call-to-actions,
 .header__brand {
-
   font-family: "Roboto Condensed", sans-serif;
 }
 .title,
@@ -91,8 +96,6 @@ header > nav,
   font-weight: 400;
   padding-bottom: var(--content-padding-bottom);
 }
-
-
 
 .section-title {
   font-size: 28px;
@@ -123,7 +126,6 @@ header > nav,
   --btn-background-hover: var(--clr-secondary-1);
   --btn-color: var(--clr-primary-2);
   --btn-color-hover: var(--clr-primary-3);
-
 }
 button {
   outline: none;
@@ -167,20 +169,18 @@ button {
   margin: 0 auto;
 }
 
-
 .section-divider {
   display: block;
   margin: 0 auto 0.6rem;
   height: 5px;
   width: 50px;
-  background-color: var(--cl_primary_3);
+  background-color: var(--clr-primary-3);
 }
 
 @media only screen and (max-width: 960px) {
   .container {
     width: calc(100% - 2rem);
   }
-
 }
 /* --------------------------------------- */
 /*          END: GLOBAL ELEMENTS        */
@@ -194,7 +194,7 @@ button {
 /* NOTE: nav styling goes here */
 
 header {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -408,7 +408,7 @@ header {
   background-attachment: fixed;
   min-height: 100vh;
   position: relative;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .hero-usp {
   min-height: 40vh;
@@ -458,8 +458,8 @@ header {
 
 /* --------------- features -------------- */
 #features {
-  background-color: var(--clr_secondary_1);
-  color: var(--cl_primary_3);
+  background-color: var(--clr-secondary-1);
+  color: var(--clr-primary-3);
   text-align: center;
   padding: 40px 75px;
 }
@@ -479,9 +479,10 @@ header {
   display: inline-block;
 }
 
-.feature-icon, .car-icon {
+.feature-icon,
+.car-icon {
   display: inline-block;
-  background-color: var(--cl_primary_2);
+  background-color: var(--clr-primary-2);
   height: 175px;
   width: 175px;
   border-radius: 50%;
@@ -694,8 +695,8 @@ header {
 
 /* ---------------- footer --------------- */
 footer {
-  background-color: var(--cl_primary_2);
-  color: var(--cl_primary_3);
+  background-color: var(--clr-primary-2);
+  color: var(--clr-primary-3);
   text-align: center;
   padding-top: 50px;
   padding-bottom: 25px;
@@ -709,7 +710,7 @@ footer {
 }
 
 .footer__contact-item {
-  text-align: left
+  text-align: left;
 }
 
 .footer__contact-item-title {
@@ -721,8 +722,8 @@ footer {
   display: block;
   margin: 0 auto 0.6rem;
   height: 100px;
-  width: 3px;
-  background-color: var(--clr_secondary_1);
+  width: 1.5px;
+  background-color: var(--clr-secondary-1);
 }
 
 .footer__socials-item {
