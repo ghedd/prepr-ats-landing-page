@@ -54,6 +54,14 @@
   --fs-title-small: clamp(15px, 1.2vw, 16px);
   --fs-content: clamp(16.5px, 1rem, 18px);
 }
+/* font sizes */
+:root {
+  --fs-title-large: clamp(38px, 5vw, 72px);
+  --fs-title-medium: clamp(24px, 2.5vw, 48px);
+  --fs-title-regular: clamp(20px, 1.5vw, 22px);
+  --fs-title-small: clamp(15px, 1.2vw, 16px);
+  --fs-content: clamp(16.5px, 1rem, 18px);
+}
 
 html,
 body {
@@ -85,6 +93,7 @@ header > nav,
 }
 
 
+
 .section-title {
   font-size: 28px;
 }
@@ -99,7 +108,6 @@ header > nav,
   font-weight: 400;
   line-height: 1.5;
   padding-bottom: var(--content-padding-bottom);
-  color: var(--clr-secondary-3);
   max-width: 72ch;
 }
 /* ----------- END: typography ----------- */
@@ -391,6 +399,59 @@ header {
 
 /* ----------------- hero ---------------- */
 /* NOTE: hero styling goes here */
+
+#hero {
+  background-image: url(./assets/images/long-queues-of-shoppers.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+.hero-usp {
+  min-height: 40vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--clr-primary-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  transition: background-color 0.2s ease-out;
+}
+@media only screen and (max-width: 800px) {
+  .hero-usp {
+    background-color: rgba(7, 46, 80, 0.8);
+  }
+}
+.hero-usp__title,
+.hero-usp__intro {
+  width: 100%;
+  color: var(--clr-primary-3);
+  text-align: center;
+}
+.hero-usp__title {
+  max-width: 72ch;
+  font-size: var(--fs-title-large);
+}
+
+.hero-usp__intro {
+  /* text-align: justify; */
+  font-size: var(--fs-content);
+}
+.hero-usp__call-to-actions {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .hero-usp__title {
+    font-size: var(--fs-title-medium);
+  }
+}
 
 /* -------------- END: hero -------------- */
 
