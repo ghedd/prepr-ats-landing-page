@@ -12,6 +12,11 @@
   margin: 0;
   padding: 0;
 }
+
+section {
+  padding: 3rem 0;
+}
+
 :root {
   --margin-bottom-section: 2rem;
   --margin-bottom-component: 1.5rem;
@@ -54,14 +59,7 @@
   --fs-title-small: clamp(15px, 1.2vw, 16px);
   --fs-content: clamp(16.5px, 1rem, 18px);
 }
-/* font sizes */
-:root {
-  --fs-title-large: clamp(38px, 5vw, 72px);
-  --fs-title-medium: clamp(24px, 2.5vw, 48px);
-  --fs-title-regular: clamp(20px, 1.5vw, 22px);
-  --fs-title-small: clamp(15px, 1.2vw, 16px);
-  --fs-content: clamp(16.5px, 1rem, 18px);
-}
+
 
 html,
 body {
@@ -79,6 +77,9 @@ header > nav,
 .call-to-actions,
 .header__brand {
   font-family: "Roboto Condensed", sans-serif;
+}
+.call-to-actions {
+  font-size: var(--fs-title-regular);
 }
 .title,
 .subtitle {
@@ -155,6 +156,7 @@ button {
 
 .link-button {
   text-decoration: none;
+  margin-bottom: var(--margin-bottom-component);
 }
 
 .container {
@@ -458,20 +460,23 @@ header {
   background-color: var(--clr-secondary-1);
   color: var(--clr-primary-3);
   text-align: center;
-  padding: 40px 75px;
+  min-height: 70vh;
+  /* padding: 40px 75px; */
 }
 
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
+  justify-content: stretch;
   padding: 30px 0;
 }
 
+
+
 .feature-item {
-  width: 250px;
-  margin: 40px auto;
+  text-align: center;
+  width: calc(5vw + 400px);
+  margin: 30px auto;
   padding: 0 25px;
   display: inline-block;
 }
