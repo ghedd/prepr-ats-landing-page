@@ -514,7 +514,7 @@ header {
   position: relative;
   min-height: 500px;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
   scrollbar-width: none;
   /* width: calc(100vh - 2vw); */
   /* height: calc(100vh - 10%); */
