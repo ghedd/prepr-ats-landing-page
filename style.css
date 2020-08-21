@@ -645,7 +645,7 @@ header {
   text-align: center;
   font-style: italic;
 }
-.comment__author-name {
+.comment__author-name, .comment__source {
   font-size: var(--fs-title-small);
 }
 .comment__author-name::before {
@@ -654,7 +654,9 @@ header {
 .comment__author-name::after {
   content: " -";
 }
-
+.comment__source {
+  color: var(--clr-primary-1)
+}
 @media only screen and (max-width: 400px) {
   .comment__author-photo {
     height: 100px;
