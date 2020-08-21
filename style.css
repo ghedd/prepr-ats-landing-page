@@ -12,7 +12,9 @@
   margin: 0;
   padding: 0;
 }
-
+a:focus {
+  outline: 1.9px dotted;
+}
 section {
   padding: 2.5rem 0;
 }
@@ -154,7 +156,7 @@ button {
   color: var(--btn-color-hover);
 }
 .btn-primary:focus {
-  outline: 0.1rem dotted var(--clr-primary-2);
+  outline: 1.9px dotted var(--clr-primary-3);
 }
 
 .link-button {
@@ -257,7 +259,7 @@ header {
   text-decoration: none;
   color: var(--clr-primary-2);
   cursor: pointer;
-  padding: 0 0.5rem;
+  /* padding: 0 0.5rem; */
   position: relative;
   text-align: center;
 }
@@ -269,7 +271,10 @@ header {
 .nav-link:focus,
 .nav-link:focus-within {
   color: var(--clr-primary-3) !important;
-  outline: 1.5px dotted var(--clr-primary-3);
+}
+
+.nav-link:focus {
+  outline: 1.9px dotted var(--clr-primary-3) !important;
 }
 
 /* burger btn */
@@ -340,10 +345,9 @@ header {
   position: absolute;
   top: 0;
   right: 50%;
-  min-width: 94px;
-  height: 77px;
+  min-width: 100px;
+  height: 82px;
   transform: translate(50%, -50%);
-  background-color: none;
   z-index: -1;
   transition: all 0.5s ease-out;
 }
@@ -364,7 +368,7 @@ header {
   background-color: var(--clr-secondary-1);
 }
 .btn-primary__nav-item:focus {
-  outline: 0.1rem dotted var(--clr-primary-3);
+  outline: 1.9px dotted var(--clr-primary-3);
 }
 
 /* responsive breakpoint */
@@ -652,7 +656,8 @@ header {
   text-align: center;
   font-style: italic;
 }
-.comment__author-name, .comment__source {
+.comment__author-name,
+.comment__source {
   font-size: var(--fs-title-small);
 }
 .comment__author-name::before {
@@ -662,7 +667,7 @@ header {
   content: " -";
 }
 .comment__source {
-  color: var(--clr-primary-1)
+  color: var(--clr-primary-1);
 }
 @media only screen and (max-width: 400px) {
   .comment__author-photo {
@@ -775,7 +780,6 @@ header {
   transform: translate(-10%, -195%) scale(1.2);
   color: var(--clr-primary-3);
 }
-
 
 input[type="submit"] {
   border: none;
