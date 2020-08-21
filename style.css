@@ -76,6 +76,7 @@ header > nav,
 .call-to-actions,
 .header__brand {
   font-family: "Passion One", cursive;
+  letter-spacing: 0.5px;
 }
 .call-to-actions {
   font-size: var(--fs-title-regular);
