@@ -641,6 +641,12 @@ header {
 .comment__title {
   font-size: var(--fs-title-medium);
 }
+.comment__title::before {
+  content: "\201C";
+}
+.comment__title::after {
+  content: "\201D";
+}
 .comment__content {
   text-align: center;
   font-style: italic;
