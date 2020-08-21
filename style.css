@@ -562,10 +562,10 @@ header {
   transform: translatey(-50%);
 }
 .carousel__btn--left {
-  left: clamp(1rem, 2.5vw, 0px);
+  left: clamp(0.5rem, 2.5vw, 0px);
 }
 .carousel__btn--right {
-  right: clamp(1rem, 2.5vw, 0px);
+  right: clamp(0.5rem, 2.5vw, 0px);
 }
 .carousel__btn--is-hidden {
   opacity: 0;
