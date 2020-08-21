@@ -2,7 +2,7 @@
 /*               reset                */
 /* --------------------------------------- */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Passion+One:wght@400;700&display=swap");
 
 /* the basic */
 *,
@@ -53,16 +53,16 @@ section {
 }
 /* font sizes */
 :root {
-  --fs-title-large: clamp(38px, 5vw, 72px);
+  --fs-title-large: clamp(48px, 6vw, 72px);
   --fs-title-medium: clamp(24px, 2.5vw, 48px);
-  --fs-title-regular: clamp(20px, 1.5vw, 22px);
+  --fs-title-regular: clamp(22px, 1.5vw, 22px);
   --fs-title-small: clamp(15px, 1.2vw, 16px);
-  --fs-content: clamp(16.5px, 1rem, 18px);
+  --fs-content: clamp(18px, 1rem, 24px);
 }
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: clamp(16px, 1.2vw, 18px);
@@ -75,7 +75,7 @@ header > nav,
 .subtitle,
 .call-to-actions,
 .header__brand {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Passion One", cursive;
 }
 .call-to-actions {
   font-size: var(--fs-title-regular);
@@ -85,8 +85,8 @@ header > nav,
   line-height: 1;
 }
 .title {
-  font-size: clamp(38px, 5vw, 72px);
-  font-weight: 700;
+  font-size: var(--fs-title-large);
+  font-weight: 400;
   padding-bottom: var(--title-padding-bottom);
 }
 .subtitle {
@@ -95,7 +95,7 @@ header > nav,
 }
 
 .section-title {
-  font-size: 28px;
+  font-size: 34px;
   margin: 0 auto;
   text-align: center;
   color: var(--clr-primary-3);
@@ -103,7 +103,7 @@ header > nav,
 .header__brand,
 .header__nav-item {
   text-transform: uppercase;
-  font-family: "Roboto Condensed", san-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
 }
 
@@ -340,7 +340,7 @@ header {
   top: 0;
   right: 50%;
   min-width: 94px;
-  height: 82px;
+  height: 77px;
   transform: translate(50%, -50%);
   background-color: none;
   z-index: -1;
@@ -355,6 +355,7 @@ header {
 .btn-primary__nav-item {
   background: var(--clr-primary-2);
   color: var(--clr-primary-3);
+  font-size: 18px;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
 }
@@ -513,7 +514,7 @@ header {
 }
 
 .feature-title {
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 700;
 }
 
