@@ -241,8 +241,11 @@ header {
   align-items: center;
 }
 
-.header__brand a {
-  background-image: url(./assets/icons/Mainlogo-nosub-navy.png);
+.header__brand img {
+  display: flex;
+  align-self: center;
+  max-width: 150px;
+  width: 20vw;
 }
 
 .header__brand-logo {
