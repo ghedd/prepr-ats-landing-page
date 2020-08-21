@@ -772,7 +772,7 @@ header {
   transition: all 0.2s ease-out;
 }
 .contact__form-item:focus-within .contact__form-label {
-  transform: translateY(-10%, -195%) scale(1.2);
+  transform: translate(-10%, -195%) scale(1.2);
   color: var(--clr-primary-3);
 }
 
