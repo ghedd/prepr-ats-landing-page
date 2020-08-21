@@ -7,8 +7,8 @@
       name="description"
       content="Tired of waiting in long queues? Admin COVID-19, it is not safe to stay in the crowd for too long. Let CollieQ help you!"
     />
-    <link rel="icon" href="./assets/icons/favicon.png">
-    
+    <link rel="icon" href="./assets/icons/favicon.png" />
+
     <title>CollieQ</title>
 
     <script
@@ -22,9 +22,7 @@
     <header class="header">
       <div class="container header__container">
         <div class="header__brand">
-          <a href="#" class="nav-link">
-            <img class="header__brand-logo" src="./assets/icons/Mainlogo-nosub-navy.png" alt="CollieQ brand"/>
-          </a>
+          <a href="#"></a>
         </div>
         <button
           id="burger-btn"
@@ -59,7 +57,7 @@
         </nav>
       </div>
     </header>
-    <section id="hero" class="hero background">
+    <section id="hero" class="hero">
       <div class="container">
         <div class="hero-usp">
           <h1 class="title hero-usp__title">We can make this better</h1>
@@ -96,7 +94,7 @@
             <p class="content feature-description">
               Our queue management software is streamlined to help you achieve
               better store performance and keep those customers rolling in.
-            </h4>
+            </p>
           </div>
           <div class="feature-item">
             <img
@@ -110,7 +108,7 @@
             <p class="content feature-description">
               Put your customers at ease, letting them queue up from the safety
               and comfort of their car or the cafe across the street.
-            </h4>
+            </p>
           </div>
           <div class="feature-item">
             <img
@@ -124,7 +122,7 @@
             <p class="content feature-description">
               We can provide analytics through guest queues and provide
               real-time information to help you manage your business.
-            </h4>
+            </p>
           </div>
         </div>
         <a class="link-button btn-primary call-to-actions" href="#contact"
@@ -262,20 +260,33 @@
     </section>
 
     <section id="contact" class="contact">
-      <div class="container">
+      <div class="contact__illustration"></div>
+      <div class="container contact__container">
+        <span class="section-divider"></span>
         <h2 class="section-title">GET IN TOUCH</h2>
-        <div class="row">
-          <div class="col-50">
-            <input type="text" id="name" name="name" placeholder="Name" />
-          </div>
-          <div class="col-50">
-            <input type="text" id="email" name="email" placeholder="Email" />
-          </div>
+
+        <div class="contact__actions">
+          <form action="/" class="contact__form">
+            <div class="contact__form-item">
+              <label for="contact-name" class="contact__form-label"
+                >your name</label
+              >
+              <input type="text" id="contact-name" name="contact-name" />
+            </div>
+            <div class="contact__form-item">
+              <label for="contact-email" class="contact__form-label"
+                >your email</label
+              >
+              <input type="email" id="contact-email" name="contact-email" />
+            </div>
+            <div class="contact__form-item">
+              <input type="submit" class="btn btn-primary" value="contact us" />
+            </div>
+          </form>
+          <p class="content contact__message">
+            We'll get in touch with you as soon as we can
+          </p>
         </div>
-        <button class="btn-primary">Contact Us</button>
-        <p class="content feature-description">
-          We'll get in touch with you as soon as we can
-        </h4>
       </div>
     </section>
 

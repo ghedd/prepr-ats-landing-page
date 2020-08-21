@@ -14,7 +14,7 @@
 }
 
 section {
-  padding: 3rem 0;
+  padding: 2.5rem 0;
 }
 
 :root {
@@ -96,6 +96,9 @@ header > nav,
 
 .section-title {
   font-size: 28px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--clr-primary-3);
 }
 .header__brand,
 .header__nav-item {
@@ -232,11 +235,14 @@ header {
 }
 /* end: navigation grid layout */
 
-.header__brand .nav-link {
-  /* font-size: 1.5rem; */
+.header__brand {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.header__brand a {
+  background-image: url(./assets/icons/Mainlogo-nosub-navy.png);
 }
 
 .header__brand-logo {
@@ -249,6 +255,7 @@ header {
   cursor: pointer;
   padding: 0 0.5rem;
   position: relative;
+  text-align: center;
 }
 .nav-link:first-of-type {
   padding-left: 0;
@@ -258,6 +265,7 @@ header {
 .nav-link:focus,
 .nav-link:focus-within {
   color: var(--clr-primary-3) !important;
+  outline: 1.5px dotted var(--clr-primary-3);
 }
 
 /* burger btn */
@@ -687,6 +695,92 @@ header {
 
 /* --------------- contact --------------- */
 /* NOTE: contact styling goes here */
+
+.contact {
+  background-color: var(--clr-secondary-1);
+  /* min-height: 90vh; */
+  padding-top: 0;
+}
+
+.contact__illustration {
+  height: 50vh;
+  min-height: 450px;
+  background-image: url(./assets/images/a-close-up-on-a-phone.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.contact__container {
+  padding-top: 3rem;
+}
+
+.contact__actions {
+  margin-top: 30px;
+}
+.contact__message {
+  color: var(--clr-primary-3);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* contact form */
+
+.contact__form {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.contact__form-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 15px auto;
+  width: calc(5vw + 400px);
+}
+
+.contact__form-label {
+  text-transform: uppercase;
+  position: absolute;
+  left: 1rem;
+  /* top: 2%; */
+  font-weight: 700;
+  transition: all 0.2s ease-out;
+  font-size: 0.8rem;
+  color: var(--clr-secondary-1);
+  transition: all 0.2s ease-out;
+}
+.contact__form-item:focus-within .contact__form-label {
+  transform: translateY(-180%) scale(1.2);
+  color: var(--clr-primary-3);
+}
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+}
+
+#contact-name,
+#contact-email {
+  /* padding: 1.6rem 0.6rem 0.2rem 1rem; */
+  padding: 0.6rem;
+  padding-left: 6.5rem;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: none !important;
+}
+
+#contact-name:focus,
+#contact-email:focus {
+  outline: 3.5px solid var(--clr-primary-2);
+}
 
 /* Floating column for inputs: 75% width */
 .col-50 {
