@@ -430,7 +430,7 @@ header {
 /* NOTE: hero styling goes here */
 
 #hero {
-  background-image: url(./assets/images/long-queues-of-shoppers.jpg);
+  background-image: url(./assets/images/long-queues-of-shoppers.webp);
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -730,7 +730,7 @@ header {
 .contact__illustration {
   height: 50vh;
   min-height: 450px;
-  background-image: url(./assets/images/a-close-up-on-a-phone.jpg);
+  background-image: url(./assets/images/a-close-up-on-a-phone.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
