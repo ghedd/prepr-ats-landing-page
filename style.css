@@ -186,6 +186,12 @@ button {
     width: calc(100% - 2rem);
   }
 }
+
+/* ---------------- input ---------------- */
+input {
+  caret-color: var(--clr-primary-1);
+}
+
 /* --------------------------------------- */
 /*          END: GLOBAL ELEMENTS        */
 /* --------------------------------------- */
@@ -795,10 +801,12 @@ input[type="submit"] {
   height: 50px;
   border: 1px solid transparent;
   border-radius: none !important;
+  transition: padding-left 0.2s ease-out;
 }
 
 #contact-name:focus,
 #contact-email:focus {
+  padding-left: 0.6rem;
   outline: 3.5px solid var(--clr-primary-2);
 }
 
