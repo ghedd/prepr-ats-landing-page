@@ -17,6 +17,7 @@ a:focus {
 }
 section {
   padding: 4rem 0;
+  padding-top: 8rem;
 }
 
 :root {
@@ -71,7 +72,9 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
+main {
+  min-height: 70vh;
+}
 header > nav,
 .title,
 .subtitle,
@@ -116,6 +119,7 @@ header > nav,
   line-height: 1.5;
   padding-bottom: var(--content-padding-bottom);
   max-width: 72ch;
+  word-wrap: normal;
 }
 /* ----------- END: typography ----------- */
 
@@ -339,7 +343,7 @@ header {
   position: relative;
   list-style: none;
   padding: 1.2rem 0;
-  width: 100%;
+  /* width: 100%; */
   transition: background-color 0.2s ease;
   z-index: 20;
 
@@ -348,21 +352,28 @@ header {
 .header__nav-item:last-of-type {
   text-align: right;
 }
+.header__nav-item.nav-active > .nav-link::after,
 .header__nav-item > .nav-link::after {
   content: "";
+  display: block;
   position: absolute;
   top: 0;
   right: 50%;
   min-width: 100px;
+  width: 120%;
   height: 82px;
   transform: translate(50%, -50%);
   z-index: -1;
   transition: all 0.5s ease-out;
 }
 
-.header__nav-item.nav-active,
+.header__nav-item.nav-active > .nav-link::after,
 .header__nav-item:hover ::after {
   background-color: var(--clr-secondary-1);
+}
+
+.header__nav-item.nav-active > .nav-link {
+  color: var(--clr-primary-3);
 }
 
 .btn-primary__nav-item {
@@ -382,6 +393,11 @@ header {
 /* responsive breakpoint */
 
 @media only screen and (max-width: 960px) {
+  .header__nav-item.nav-active > .nav-link::after,
+  .header__nav-item:hover > .nav-link::after {
+    background-color: transparent;
+  }
+
   .header__burger-btn {
     display: flex;
   }
@@ -775,6 +791,7 @@ header {
 }
 
 .contact__form-item {
+  padding-top: 0.5rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -808,7 +825,7 @@ input[type="submit"] {
 #contact-name,
 #contact-email {
   /* padding: 1.6rem 0.6rem 0.2rem 1rem; */
-  padding: 0.6rem;
+  padding: 1rem;
   padding-left: 6.5rem;
   width: 100%;
   height: 50px;
@@ -910,3 +927,77 @@ footer {
 /* --------------------------------------- */
 /*            END: SECTIONS            */
 /* --------------------------------------- */
+
+/* --------------------------------------- */
+/*                SUB PAGES                */
+/* --------------------------------------- */
+
+/* ----------- collaboration pg ---------- */
+
+#collaborate {
+  margin-top: 60px;
+  padding-top: 4rem;
+  background-color: var(--clr-secondary-1);
+}
+
+.collaborate-grid {
+  display: grid;
+  gap: 0 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: stretch;
+}
+
+@media only screen and (max-width: 960px) {
+  .collaborate-grid {
+    gap: 0 calc(2rem + 2vw);
+  }
+}
+
+.collaborate__title,
+.collaborate__subtitle,
+.collaborate__content-title,
+.collaborate__content-body {
+  /* text-transform: capitalize; */
+  color: var(--clr-primary-3);
+}
+.collaborate__subtitle {
+  font-size: var(--fs-title-medium);
+}
+.collaborate__content-title {
+  font-size: var(--fs-title-regular);
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+#who-you-are,
+#what-you-get,
+#collaborate-action {
+  padding: 1rem 0;
+}
+.collaborate-action__form {
+  flex-direction: column;
+}
+.collaborate-action__form > .contact__form-item {
+  width: 100%;
+}
+
+.contact__form-item.textarea:focus-within > .textarea-label {
+  transform: translateY(-210%) scale(1.2);
+}
+
+textarea {
+  min-height: 120px;
+  padding-top: 2.4rem;
+  padding-left: 1rem;
+  transition: padding-top 0.2s ease-in-out;
+  font-family: "Lato", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: inherit;
+  caret-color: var(--clr-primary-1);
+}
+textarea:focus {
+  padding-top: 1rem;
+  outline: 3.5px solid var(--clr-primary-2);
+}
+.textarea-label {
+  top: 20%;
+}

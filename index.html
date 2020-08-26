@@ -9,7 +9,7 @@
     />
     <meta
       name="keywords"
-      content="virtual queue, queue system, COVID-19 asisstance"
+      content="virtual queue, queue system, COVID-19 asisstance, queue management"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
@@ -90,6 +90,11 @@
               <a href="/#contact" class="nav-link">contact</a>
             </li>
             <li class="header__nav-item">
+              <a href="pages/collaboration.html" class="nav-link"
+                >become partner</a
+              >
+            </li>
+            <li class="header__nav-item">
               <button
                 class="btn-primary btn-primary__nav-item call-to-actions"
                 onclick="window.location.href='/#contact'"
@@ -101,287 +106,294 @@
         </nav>
       </div>
     </header>
-    <section id="hero" class="hero">
-      <div class="container">
-        <div class="hero-usp">
-          <h1 class="title hero-usp__title">We can do better.</h1>
-          <p class="content hero-usp__intro">
-            COVID-19 took us all by surprise, but we’re ready to fight back and
-            relieve the frontline. Our streamlined, easy-to-use software can
-            relieve the stress on your employees, reduce unnecessary physical
-            contact, and allow you to analyze the performance of your business.
-          </p>
-          <button
-            class="btn-primary call-to-actions hero-usp__call-to-actions"
-            onclick="window.location.href='/#features'"
-          >
-            find out more
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section id="features">
-      <div class="container">
-        <span class="section-divider"></span>
-        <h2 class="section-title">WHAT WE OFFER</h2>
-        <div class="features-list">
-          <div class="feature-item">
-            <img
-              class="feature-icon"
-              src="./assets/icons/check-icon.svg"
-              alt="check mark icon"
-            />
-            <h3 class="title feature-title">Efficiency</h3>
-            <p class="content feature-description">
-              Our queue management software is streamlined to help you achieve
-              better store performance and keep those customers rolling in.
+    <main>
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero-usp">
+            <h1 class="title hero-usp__title">We can do better.</h1>
+            <p class="content hero-usp__intro">
+              COVID-19 took us all by surprise, but we’re ready to fight back
+              and relieve the frontline. Our streamlined, easy-to-use software
+              can relieve the stress on your employees, reduce unnecessary
+              physical contact, and allow you to analyze the performance of your
+              business.
             </p>
-          </div>
-          <div class="feature-item">
-            <img
-              class="feature-icon car-icon"
-              src="./assets/icons/car-icon.svg"
-              alt="car icon"
-            />
-            <h3 class="title feature-title">Comfort</h3>
-            <p class="content feature-description">
-              Put your customers at ease, letting them queue up from the safety
-              and comfort of their car or a nearby cafe.
-            </p>
-          </div>
-          <div class="feature-item">
-            <img
-              class="feature-icon"
-              src="./assets/icons/chart-icon.svg"
-              alt="chart icon"
-            />
-            <h3 class="title feature-title">Analytics</h3>
-            <p class="content feature-description">
-              We can analyze how your customers line up and provide real-time
-              information to help you manage your business.
-            </p>
+            <button
+              class="btn-primary call-to-actions hero-usp__call-to-actions"
+              onclick="window.location.href='/#features'"
+            >
+              find out more
+            </button>
           </div>
         </div>
-        <a class="link-button btn-primary call-to-actions" href="#contact"
-          >GET STARTED</a
-        >
-      </div>
-    </section>
+      </section>
 
-    <section id="social-proof" class="social">
-      <div class="carousel container">
-        <button
-          id="carousel-btn-left"
-          class="carousel__btn carousel__btn--left carousel__btn--is-hidden"
-        >
-          <!-- <span class="angle angle--left"></span> -->
-          <svg width="15" height="25" viewBox="0 0 256 512" fill="none">
-            <path
-              d="M31.7001 239L167.7 103C177.1 93.6 192.3 93.6 201.6 103L224.2 125.6C233.6 135 233.6 150.2 224.2 159.5L127.9 256L224.3 352.4C233.7 361.8 233.7 377 224.3 386.3L201.7 409C192.3 418.4 177.1 418.4 167.8 409L31.8001 273C22.3001 263.6 22.3001 248.4 31.7001 239V239Z"
-              class="angle"
-            />
-          </svg>
-        </button>
-
-        <button
-          id="carousel-btn-right"
-          class="carousel__btn carousel__btn--right"
-        >
-          <!-- <span class="angle angle--right"></span> -->
-          <svg width="15" height="25" viewBox="0 0 256 512" fill="none">
-            <path
-              d="M224.3 273L88.3 409C78.9 418.4 63.7 418.4 54.4 409L31.8 386.4C22.4 377 22.4 361.8 31.8 352.5L128.2 256.1L31.8 159.7C22.4 150.3 22.4 135.1 31.8 125.8L54.3 103C63.7 93.6 78.9 93.6 88.2 103L224.2 239C233.7 248.4 233.7 263.6 224.3 273V273Z"
-              class="angle"
-            />
-          </svg>
-        </button>
-
-        <div class="carousel__track-warpper">
-          <ul class="carousel__track">
-            <li class="carousel__slide carousel__slide--current">
-              <span class="title comment__title"
-                >Will lineups outside continue amid freezing temperatures?</span
-              >
-              <p class="content comment__content">
-                Winter lineups are going to be a reality and people just have to
-                be as patient as possible, experts warn. “You can't cram people
-                into indoor spaces. We still have to facilitate physical
-                distancing in indoor spaces. It's really important to do that
-                and if that means that sometimes we will be lining up in the
-                cold, so be it,” Bogoch said.
-              </p>
-
-              <span class="comment__author-name">
-                CTV News
-                <a
-                  rel="noopener noreferer"
-                  tabindex="-1"
-                  class="comment__source"
-                  target="_blank"
-                  href="https://toronto.ctvnews.ca/summer-has-been-the-easy-part-of-the-pandemic-it-s-what-comes-next-that-worries-experts-1.5059785"
-                >
-                  (Source)
-                </a>
-              </span>
-            </li>
-
-            <li class="carousel__slide">
-              <span class="title comment__title"
-                >A lot of low-income workers are disadvantaged in this
-                case</span
-              >
-              <p class="content comment__content">
-                The truth is that some people are affected more than others. For
-                example, a young professional with no dependents and flexible
-                work hours is likely more equipped to adapt to long queues than
-                an essential service worker or low-income family, said Agata
-                Soroko, a PhD candidate at the University of Ottawa who focuses
-                on poverty and inequality.
-              </p>
-
-              <span class="comment__author-name">
-                Vice
-                <a
-                  rel="noopener noreferer"
-                  tabindex="-1"
-                  class="comment__source"
-                  target="_blank"
-                  href="https://www.vice.com/en_ca/article/dyzy7a/lines-are-political-covid-19-highlights-just-how-much"
-                >
-                  (Source)
-                </a>
-              </span>
-            </li>
-
-            <li class="carousel__slide">
-              <span class="title comment__title">People waited for hours</span>
-              <p class="content comment__content">
-                The first person in line at the Brandon coronavirus test site
-                was there at 6:30 a.m. Tuesday. By 8 a.m., at least 40 cars had
-                joined the line behind him, all in an effort to avoid the
-                massive lineups seen the day before. The site opened at 8:45
-                a.m. People waiting in line Monday at the Brandon drive-thru
-                community testing site at the Town Centre Parkade waited for
-                hours.
-              </p>
-
-              <span class="comment__author-name">
-                Global News
-                <a
-                  rel="noopener noreferer"
-                  tabindex="-1"
-                  class="comment__source"
-                  target="_blank"
-                  href="https://globalnews.ca/news/7265383/brandon-coronavirus-test-site/"
-                >
-                  (Source)
-                </a>
-              </span>
-            </li>
-
-            <li class="carousel__slide">
-              <span class="title comment__title">Many waited in the rain</span>
-              <p class="content comment__content">
-                People waited in line for hours June 22, a day that reached a
-                high of 34°C in Ottawa, to take their written tests to get their
-                G1 or M1 class licenses. On Aug. 4, services expanded to offer
-                G1 exit tests, allowing drivers to get their G2 licenses, which
-                frees them from the requirement of having to have an experienced
-                driver in the front passenger seat at all times. This time, many
-                drivers waited in the rain for a chance to prove they are
-                equipped to drive solo.
-              </p>
-
-              <span class="comment__author-name">
-                CTV News
-                <a
-                  rel="noopener noreferer"
-                  tabindex="-1"
-                  class="comment__source"
-                  target="_blank"
-                  href="https://ottawa.ctvnews.ca/long-lines-outside-walkley-drivetest-centre-as-g2-testing-resumes-1.5050895https://ottawa.ctvnews.ca/long-lines-outside-walkley-drivetest-centre-as-g2-testing-resumes-1.5050895"
-                >
-                  (Source)
-                </a>
-              </span>
-            </li>
-
-            <li class="carousel__slide">
-              <span class="title comment__title"
-                >Longer wait times can lead to impatience or even aggressive
-                behaviour</span
-              >
-              <p class="content comment__content">
-                Larson, also known as “Dr. Queue,” said queues whip up similar
-                feelings as when you’re merging vehicles. If one driver cuts
-                another off, the other driver may experience road rage—even
-                though that person lost only a few seconds of time. Queues
-                aren’t just a catalyst for impatience and disappointment;
-                they’re a social justice issue, experts say.
-              </p>
-              <span class="comment__author-name">
-                Vice
-                <a
-                  rel="noopener noreferer"
-                  tabindex="-1"
-                  class="comment__source"
-                  target="_blank"
-                  href="https://www.vice.com/en_ca/article/dyzy7a/lines-are-political-covid-19-highlights-just-how-much"
-                >
-                  (Source)
-                </a>
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div class="carousel__nav-panel">
-          <button class="nav-panel__dot nav-panel__dot--active"></button>
-          <button class="nav-panel__dot"></button>
-          <button class="nav-panel__dot"></button>
-          <button class="nav-panel__dot"></button>
-          <button class="nav-panel__dot"></button>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="contact__illustration"></div>
-      <div class="container contact__container">
-        <span class="section-divider"></span>
-        <h2 class="section-title">GET IN TOUCH</h2>
-
-        <div class="contact__actions">
-          <form action="/" class="contact__form">
-            <div class="contact__form-item">
-              <label for="contact-name" class="contact__form-label"
-                >your name</label
-              >
-              <input type="text" id="contact-name" name="contact-name" />
-            </div>
-            <div class="contact__form-item">
-              <label for="contact-email" class="contact__form-label"
-                >your email</label
-              >
-              <input type="email" id="contact-email" name="contact-email" />
-            </div>
-            <div class="contact__form-item">
-              <input
-                type="submit"
-                class="btn btn-primary call-to-actions"
-                value="contact us"
+      <section id="features">
+        <div class="container">
+          <span class="section-divider"></span>
+          <h2 class="section-title">WHAT WE OFFER</h2>
+          <div class="features-list">
+            <div class="feature-item">
+              <img
+                class="feature-icon"
+                src="./assets/icons/check-icon.svg"
+                alt="check mark icon"
               />
+              <h3 class="title feature-title">Efficiency</h3>
+              <p class="content feature-description">
+                Our queue management software is streamlined to help you achieve
+                better store performance and keep those customers rolling in.
+              </p>
             </div>
-          </form>
-          <p class="content contact__message">
-            We'll get in touch with you as soon as we can.
-            <br/>
-            We respect your privacy so we promise spam-free!
-          </p>
+            <div class="feature-item">
+              <img
+                class="feature-icon car-icon"
+                src="./assets/icons/car-icon.svg"
+                alt="car icon"
+              />
+              <h3 class="title feature-title">Comfort</h3>
+              <p class="content feature-description">
+                Put your customers at ease, letting them queue up from the
+                safety and comfort of their car or a nearby cafe.
+              </p>
+            </div>
+            <div class="feature-item">
+              <img
+                class="feature-icon"
+                src="./assets/icons/chart-icon.svg"
+                alt="chart icon"
+              />
+              <h3 class="title feature-title">Analytics</h3>
+              <p class="content feature-description">
+                We can analyze how your customers line up and provide real-time
+                information to help you manage your business.
+              </p>
+            </div>
+          </div>
+          <a class="link-button btn-primary call-to-actions" href="#contact"
+            >GET STARTED</a
+          >
         </div>
-      </div>
-    </section>
+      </section>
 
+      <section id="social-proof" class="social">
+        <div class="carousel container">
+          <button
+            id="carousel-btn-left"
+            class="carousel__btn carousel__btn--left carousel__btn--is-hidden"
+          >
+            <!-- <span class="angle angle--left"></span> -->
+            <svg width="15" height="25" viewBox="0 0 256 512" fill="none">
+              <path
+                d="M31.7001 239L167.7 103C177.1 93.6 192.3 93.6 201.6 103L224.2 125.6C233.6 135 233.6 150.2 224.2 159.5L127.9 256L224.3 352.4C233.7 361.8 233.7 377 224.3 386.3L201.7 409C192.3 418.4 177.1 418.4 167.8 409L31.8001 273C22.3001 263.6 22.3001 248.4 31.7001 239V239Z"
+                class="angle"
+              />
+            </svg>
+          </button>
+
+          <button
+            id="carousel-btn-right"
+            class="carousel__btn carousel__btn--right"
+          >
+            <!-- <span class="angle angle--right"></span> -->
+            <svg width="15" height="25" viewBox="0 0 256 512" fill="none">
+              <path
+                d="M224.3 273L88.3 409C78.9 418.4 63.7 418.4 54.4 409L31.8 386.4C22.4 377 22.4 361.8 31.8 352.5L128.2 256.1L31.8 159.7C22.4 150.3 22.4 135.1 31.8 125.8L54.3 103C63.7 93.6 78.9 93.6 88.2 103L224.2 239C233.7 248.4 233.7 263.6 224.3 273V273Z"
+                class="angle"
+              />
+            </svg>
+          </button>
+
+          <div class="carousel__track-warpper">
+            <ul class="carousel__track">
+              <li class="carousel__slide carousel__slide--current">
+                <span class="title comment__title"
+                  >Will lineups outside continue amid freezing
+                  temperatures?</span
+                >
+                <p class="content comment__content">
+                  Winter lineups are going to be a reality and people just have
+                  to be as patient as possible, experts warn. “You can't cram
+                  people into indoor spaces. We still have to facilitate
+                  physical distancing in indoor spaces. It's really important to
+                  do that and if that means that sometimes we will be lining up
+                  in the cold, so be it,” Bogoch said.
+                </p>
+
+                <span class="comment__author-name">
+                  CTV News
+                  <a
+                    rel="noopener noreferer"
+                    tabindex="-1"
+                    class="comment__source"
+                    target="_blank"
+                    href="https://toronto.ctvnews.ca/summer-has-been-the-easy-part-of-the-pandemic-it-s-what-comes-next-that-worries-experts-1.5059785"
+                  >
+                    (Source)
+                  </a>
+                </span>
+              </li>
+
+              <li class="carousel__slide">
+                <span class="title comment__title"
+                  >A lot of low-income workers are disadvantaged in this
+                  case</span
+                >
+                <p class="content comment__content">
+                  The truth is that some people are affected more than others.
+                  For example, a young professional with no dependents and
+                  flexible work hours is likely more equipped to adapt to long
+                  queues than an essential service worker or low-income family,
+                  said Agata Soroko, a PhD candidate at the University of Ottawa
+                  who focuses on poverty and inequality.
+                </p>
+
+                <span class="comment__author-name">
+                  Vice
+                  <a
+                    rel="noopener noreferer"
+                    tabindex="-1"
+                    class="comment__source"
+                    target="_blank"
+                    href="https://www.vice.com/en_ca/article/dyzy7a/lines-are-political-covid-19-highlights-just-how-much"
+                  >
+                    (Source)
+                  </a>
+                </span>
+              </li>
+
+              <li class="carousel__slide">
+                <span class="title comment__title"
+                  >People waited for hours</span
+                >
+                <p class="content comment__content">
+                  The first person in line at the Brandon coronavirus test site
+                  was there at 6:30 a.m. Tuesday. By 8 a.m., at least 40 cars
+                  had joined the line behind him, all in an effort to avoid the
+                  massive lineups seen the day before. The site opened at 8:45
+                  a.m. People waiting in line Monday at the Brandon drive-thru
+                  community testing site at the Town Centre Parkade waited for
+                  hours.
+                </p>
+
+                <span class="comment__author-name">
+                  Global News
+                  <a
+                    rel="noopener noreferer"
+                    tabindex="-1"
+                    class="comment__source"
+                    target="_blank"
+                    href="https://globalnews.ca/news/7265383/brandon-coronavirus-test-site/"
+                  >
+                    (Source)
+                  </a>
+                </span>
+              </li>
+
+              <li class="carousel__slide">
+                <span class="title comment__title"
+                  >Many waited in the rain</span
+                >
+                <p class="content comment__content">
+                  People waited in line for hours June 22, a day that reached a
+                  high of 34°C in Ottawa, to take their written tests to get
+                  their G1 or M1 class licenses. On Aug. 4, services expanded to
+                  offer G1 exit tests, allowing drivers to get their G2
+                  licenses, which frees them from the requirement of having to
+                  have an experienced driver in the front passenger seat at all
+                  times. This time, many drivers waited in the rain for a chance
+                  to prove they are equipped to drive solo.
+                </p>
+
+                <span class="comment__author-name">
+                  CTV News
+                  <a
+                    rel="noopener noreferer"
+                    tabindex="-1"
+                    class="comment__source"
+                    target="_blank"
+                    href="https://ottawa.ctvnews.ca/long-lines-outside-walkley-drivetest-centre-as-g2-testing-resumes-1.5050895https://ottawa.ctvnews.ca/long-lines-outside-walkley-drivetest-centre-as-g2-testing-resumes-1.5050895"
+                  >
+                    (Source)
+                  </a>
+                </span>
+              </li>
+
+              <li class="carousel__slide">
+                <span class="title comment__title"
+                  >Longer wait times can lead to impatience or even aggressive
+                  behaviour</span
+                >
+                <p class="content comment__content">
+                  Larson, also known as “Dr. Queue,” said queues whip up similar
+                  feelings as when you’re merging vehicles. If one driver cuts
+                  another off, the other driver may experience road rage—even
+                  though that person lost only a few seconds of time. Queues
+                  aren’t just a catalyst for impatience and disappointment;
+                  they’re a social justice issue, experts say.
+                </p>
+                <span class="comment__author-name">
+                  Vice
+                  <a
+                    rel="noopener noreferer"
+                    tabindex="-1"
+                    class="comment__source"
+                    target="_blank"
+                    href="https://www.vice.com/en_ca/article/dyzy7a/lines-are-political-covid-19-highlights-just-how-much"
+                  >
+                    (Source)
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="carousel__nav-panel">
+            <button class="nav-panel__dot nav-panel__dot--active"></button>
+            <button class="nav-panel__dot"></button>
+            <button class="nav-panel__dot"></button>
+            <button class="nav-panel__dot"></button>
+            <button class="nav-panel__dot"></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="contact__illustration"></div>
+        <div class="container contact__container">
+          <span class="section-divider"></span>
+          <h2 class="section-title">GET IN TOUCH</h2>
+
+          <div class="contact__actions">
+            <form action="/" class="contact__form">
+              <div class="contact__form-item">
+                <label for="contact-name" class="contact__form-label"
+                  >your name</label
+                >
+                <input type="text" id="contact-name" name="contact-name" />
+              </div>
+              <div class="contact__form-item">
+                <label for="contact-email" class="contact__form-label"
+                  >your email</label
+                >
+                <input type="email" id="contact-email" name="contact-email" />
+              </div>
+              <div class="contact__form-item">
+                <input
+                  type="submit"
+                  class="btn btn-primary call-to-actions"
+                  value="contact us"
+                />
+              </div>
+            </form>
+            <p class="content contact__message">
+              We'll get in touch with you as soon as we can.
+              <br />
+              We respect your privacy so we promise spam-free!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="footer__contact-list">
         <div class="footer__contact-item">
