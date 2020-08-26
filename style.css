@@ -16,7 +16,7 @@ a:focus {
   outline: 1.9px dotted;
 }
 section {
-  padding: 2.5rem 0;
+  padding: 4rem 0;
 }
 
 :root {
@@ -161,7 +161,8 @@ button {
 
 .link-button {
   text-decoration: none;
-  margin-bottom: var(--margin-bottom-component);
+  /* margin-bottom: var(--margin-bottom-component); */
+  margin-bottom: 1.4rem;
 }
 
 .container {
@@ -416,6 +417,10 @@ header {
     pointer-events: none;
   }
 
+  .header__nav-item:last-of-type {
+    margin-bottom: 4rem;
+  }
+
   .nav-link::after {
     display: none;
   }
@@ -451,6 +456,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   padding: 2rem;
+  padding-bottom: 4rem;
   transition: background-color 0.2s ease-out;
 }
 @media only screen and (max-width: 800px) {
@@ -474,7 +480,7 @@ header {
   font-size: var(--fs-content);
 }
 .hero-usp__call-to-actions {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 
 @media only screen and (max-width: 400px) {
@@ -491,7 +497,7 @@ header {
   color: var(--clr-primary-3);
   text-align: center;
   min-height: 70vh;
-  /* padding: 40px 75px; */
+  padding-bottom: 5rem;
 }
 
 .features-list {
@@ -504,8 +510,10 @@ header {
 .feature-item {
   text-align: center;
   width: calc(5vw + 400px);
-  margin: 30px auto;
-  padding: 0 25px;
+  /* margin: 30px auto;
+  padding: 0 25px; */
+  margin: 2rem auto;
+  padding: 0 3rem;
   display: inline-block;
 }
 
@@ -537,7 +545,9 @@ header {
 
 /* ------------- social proof ------------ */
 /* NOTE: social proof styling goes here */
-
+#social-proof {
+  padding-top: 0.5rem;
+}
 .social {
   background-color: var(--clr-primary-2);
 }
