@@ -56,8 +56,8 @@ section {
 /* font sizes */
 :root {
   --fs-title-large: clamp(48px, 6vw, 72px);
-  --fs-title-medium: clamp(24px, 2.5vw, 48px);
-  --fs-title-regular: clamp(22px, 1.5vw, 22px);
+  --fs-title-medium: clamp(32px, 4vw, 48px);
+  --fs-title-regular: clamp(24px, 3vw, 32px);
   --fs-title-small: clamp(15px, 1.2vw, 16px);
   --fs-content: clamp(18px, 1rem, 24px);
 }
@@ -98,7 +98,8 @@ header > nav,
 }
 
 .section-title {
-  font-size: 34px;
+  /* font-size: 34px; */
+  font-size: var(--fs-title-regular);
   margin: 0 auto;
   text-align: center;
   color: var(--clr-primary-3);
@@ -534,6 +535,7 @@ header {
 
 .feature-title {
   font-size: 32px;
+  font-size: var(--fs-title-regular);
   font-weight: 700;
 }
 
