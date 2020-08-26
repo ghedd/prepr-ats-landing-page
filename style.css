@@ -986,18 +986,19 @@ footer {
 }
 
 textarea {
-  min-height: 120px;
-  padding-top: 2.4rem;
+  min-height: 180px;
+  padding-top: 2.8rem;
   padding-left: 1rem;
   transition: padding-top 0.2s ease-in-out;
   font-family: "Lato", Tahoma, Geneva, Verdana, sans-serif;
   font-size: inherit;
   caret-color: var(--clr-primary-1);
+  resize: none;
 }
 textarea:focus {
-  padding-top: 1rem;
+  padding-top: 2rem;
   outline: 3.5px solid var(--clr-primary-2);
 }
 .textarea-label {
-  top: 20%;
+  top: 14%;
 }
