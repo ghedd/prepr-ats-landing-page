@@ -56,7 +56,7 @@
     <!-- page stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="index">
     <header class="header">
       <div class="container header__container">
         <div class="header__brand">
@@ -80,13 +80,13 @@
         </button>
         <nav id="site-nav" class="header__site-nav">
           <ul class="header__site-nav-group">
-            <li class="header__nav-item">
-              <a href="#" class="nav-link">home</a>
+            <li data-section="hero" class="header__nav-item">
+              <a href="/#" class="nav-link">home</a>
             </li>
-            <li class="header__nav-item">
+            <li data-section="features" class="header__nav-item">
               <a href="/#features" class="nav-link">features</a>
             </li>
-            <li class="header__nav-item">
+            <li data-section="contact" class="header__nav-item">
               <a href="/#contact" class="nav-link">contact</a>
             </li>
             <li class="header__nav-item">
@@ -107,7 +107,7 @@
       </div>
     </header>
     <main>
-      <section id="hero" class="hero">
+      <section data-section-index="0" id="hero" class="hero">
         <div class="container">
           <div class="hero-usp">
             <h1 class="title hero-usp__title">We can do better.</h1>
@@ -128,7 +128,7 @@
         </div>
       </section>
 
-      <section id="features">
+      <section data-section-index="1" id="features">
         <div class="container">
           <span class="section-divider"></span>
           <h2 class="section-title">WHAT WE OFFER</h2>
@@ -357,7 +357,7 @@
         </div>
       </section>
 
-      <section id="contact" class="contact">
+      <section data-section-index="2" id="contact" class="contact">
         <div class="contact__illustration"></div>
         <div class="container contact__container">
           <span class="section-divider"></span>
