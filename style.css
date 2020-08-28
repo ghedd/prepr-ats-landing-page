@@ -1096,7 +1096,6 @@ textarea:focus {
   padding: 2em;
 }
 
-/*empathy, integrity*/
 .about__values-section:not(:first-child):nth-child(even) {
   flex-direction: row-reverse;
   text-align: right;
@@ -1110,12 +1109,6 @@ textarea:focus {
 .about__values-section:not(:first-child):nth-child(even) img {
   margin-right: 2em;
 }
-
-/* @media only screen and (max-width: 500px) {
-  .about__values-section
-
-  
-} */
 
 .about__values-text {
   color: var(--clr-primary-3);
@@ -1133,11 +1126,9 @@ textarea:focus {
 
 .about__values-description {
   margin-top: 15px;
-  max-width: 30ch;
+  max-width: 230px;
 }
 
-
-/*empathy/integrity*/
 .about__values-section:not(:first-child):nth-child(odd) .about__values-title {
   background-color: var(--clr-primary-3);
   color: var(--clr-primary-2);
@@ -1150,8 +1141,6 @@ textarea:focus {
 }
 
 
-
-
 /*media queries*/
 
 @media only screen and (max-width: 500px) {
@@ -1160,17 +1149,61 @@ textarea:focus {
   }
 
   .about__values-section {
-    display: block;
-    padding: 0;
+    flex-direction: column;
   }
 
-  .about__values-image {
+  .about__values-section:not(:first-child):nth-child(even) {
+    flex-direction: column;
+  }
+
+  .about__values-text {
+    width: 85%;
+    margin-bottom: 1em;
+  }
+
+  .about__values-section img {
     display: block;
-    width: 100%;
+  }
+
+  .about__values-description {
+    margin-top: 15px;
+    max-width: none;
+  }
+  
+  .about__values-section:not(:first-child):nth-child(even) p{ 
+    padding-left: 15%;
+  }  
+
+  .about__values-section:not(:first-child):nth-child(odd) p{
+    padding-right: 15%;
+  }
+  
+  .about__values-section:not(:first-child):nth-child(odd) img{
+    margin-left: 0;
+  }
+
+  .about__values-section:not(:first-child):nth-child(even) img{ 
+    margin-right: 0;
+  }  
+
+  .about__values-image {
+    width: 85%; 
+    max-width: none;
   }
 }
 
+@media only screen and (max-width: 300px) {
+  .about__values-section img {
+    display: none;
+  }
 
+  .about__values-section:not(:first-child):nth-child(even) p {
+    padding-left: 0;
+  }
 
+  .about__values-section:not(:first-child):nth-child(odd) p {
+    padding-right: 0;
+  }
+}
 
 /* ----------- team ----------- */
