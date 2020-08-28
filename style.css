@@ -1230,18 +1230,13 @@ textarea:focus {
 }
 
 .about__team-member {
-  width: 200px;
+  width: 225px;
   text-align: center;
   margin: 1em 1em 1.5em;
-  /* flex-basis: 33.3%; */
 }
 
-/* .about__team-member:nth-child(n+4) {
-  flex-basis: 50%
-} */
-
 .about__team-image {
-  width: 90%;
+  width: 180px;
   border-radius: 50%;
 }
 
@@ -1259,13 +1254,35 @@ textarea:focus {
 }
 
 
+@media only screen and (min-width: 1050px) {
+  .about__team-section {
+    flex-wrap: nowrap;
+  }
+
+  .about__team-member {
+    flex-basis: 33%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about__team-member:not(nth-child(3n)) {
+    flex-basis: 49%;
+  }
+
+  .about__team-member:nth-child(3n) {
+    flex-basis: 100%;
+  }
+}
+
+
 @media only screen and (max-width: 500px) {
   .about__team {
     padding-top: 3em;
   }
 
-  .about__team-member {
+  .about__team-member, .about__team-middle {
     min-width: 100px;
+    width: 80%;
     margin: 2em 1em 2.5em;
   }
 
