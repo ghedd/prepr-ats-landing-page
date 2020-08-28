@@ -1045,14 +1045,19 @@ textarea:focus {
   }
 }
 
+.about__hero-title {
+  margin-bottom: 0.5em;
+}
 
+.about__hero-title,
 .about__title,
 .about__intro {
   color: var(--clr-primary-3);
   text-align: center;
   letter-spacing: 1.25px;
 }
-.about__title {
+
+.about__title, .about__hero-title {
   padding-bottom: 0;
   font-size: var(--fs-title-medium);
 }
@@ -1113,6 +1118,7 @@ textarea:focus {
 .about__values-text {
   color: var(--clr-primary-3);
   font-size: var(--fs-content);
+  letter-spacing: 0.5px;
 }
 
 .about__values-title {
@@ -1207,3 +1213,63 @@ textarea:focus {
 }
 
 /* ----------- team ----------- */
+
+.about__team {
+  background: var(--clr-secondary-1);
+  padding: 2.5em 1em;
+}
+
+.about__team-header {
+  margin-bottom: 2em;
+}
+
+.about__team-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.about__team-member {
+  width: 200px;
+  text-align: center;
+  margin: 1em 1em 1.5em;
+  /* flex-basis: 33.3%; */
+}
+
+/* .about__team-member:nth-child(n+4) {
+  flex-basis: 50%
+} */
+
+.about__team-image {
+  width: 90%;
+  border-radius: 50%;
+}
+
+.about__team-name {
+  font-size: 24px;
+  color: var(--clr-primary-3);
+  font-family: "Passion One", cursive;
+  letter-spacing: 0.5px;
+  margin-top: 0.5em;
+}
+
+.about__team-role {
+  color: var(--clr-primary-3);
+  letter-spacing: 0.5px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .about__team {
+    padding-top: 3em;
+  }
+
+  .about__team-member {
+    min-width: 100px;
+    margin: 2em 1em 2.5em;
+  }
+
+  .about__team-member:last-child {
+    margin: 2em 1em 0;
+  }
+}
