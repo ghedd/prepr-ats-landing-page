@@ -517,7 +517,7 @@ header {
   background-color: var(--clr-secondary-1);
   color: var(--clr-primary-3);
   text-align: center;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   padding-top: 4rem;
   min-height: 70vh;
   padding-bottom: 5rem;
