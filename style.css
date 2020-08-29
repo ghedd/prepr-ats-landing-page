@@ -238,7 +238,7 @@ header {
 
 .header__container {
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: minmax(30vw, auto) 1fr auto;
   grid-template-rows: minmax(auto, 60px) minmax(auto, 1fr);
   align-items: center;
   justify-content: flex-end;
