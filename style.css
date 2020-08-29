@@ -153,11 +153,18 @@ button {
   /* font-size: 1.2rem; */
 }
 .btn-primary {
-  background-color: var(--btn-background);
-  color: var(--btn-color);
   transition: all 0.2s ease-out;
+  background-color: var(--clr-primary-1);
 }
-.btn-primary:hover {
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--clr-primary-1);
+  border: 2px solid var(--clr-primary-1);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
   color: var(--btn-color-hover);
 }
 .btn-primary:focus {
@@ -271,15 +278,15 @@ header {
   text-decoration: none;
   color: var(--clr-primary-2);
   cursor: pointer;
-  /* padding: 0 0.5rem; */
+  padding: 0 0.5rem;
   position: relative;
   text-align: center;
   transition: all 0.2s ease-out;
 }
 
-.nav-link:first-of-type {
+/* .nav-link:first-of-type {
   padding-left: 0;
-}
+} */
 
 .nav-link--active,
 .nav-link:hover,
@@ -288,7 +295,6 @@ header {
   color: var(--clr-primary-3) !important;
   transition-delay: 0.1s;
 }
-
 
 .nav-link:focus {
   outline: 1.9px dotted var(--clr-primary-3) !important;
@@ -364,8 +370,8 @@ header {
   position: absolute;
   top: 0;
   right: 50%;
-  min-width: 100px;
-  width: 120%;
+  /* min-width: 80px; */
+  width: 100%;
   height: 82px;
   transform: translate(50%, -50%);
   z-index: -1;
@@ -1007,3 +1013,151 @@ textarea:focus {
 .textarea-label {
   top: 14%;
 }
+
+/* -------- end: collaboration pg -------- */
+
+/* -------------- pricing pg ------------- */
+
+#pricing-page {
+  background-color: var(--clr-secondary-1);
+}
+#pricing {
+  margin-top: 60px;
+  padding-top: 4rem;
+}
+.pricing__title,
+.pricing__subtitle {
+  color: var(--clr-primary-3);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pricing__subtitle {
+  font-size: var(--fs-title-regular);
+}
+
+.card__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 0 4.5rem 0;
+  max-width: 1200px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 290px;
+  min-height: 400px;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  padding: 1.5rem 1.2rem;
+  /* background-color:  var(--clr-secondary-2); */
+}
+
+@media only screen and (max-width: 900px) {
+  .card__container {
+    max-width: 700px;
+    flex-direction: column;
+  }
+  .card {
+    max-width: 400px;
+    min-height: 200px;
+  }
+}
+
+.card__content-wrapper {
+  padding-bottom: 3rem;
+}
+.card__pricing {
+  border: 2px solid var(--clr-primary-1);
+}
+
+.card__pricing--prem {
+  box-shadow: var(--btn-drop-shadow);
+  background-color: var(--clr-primary-2);
+  border: none;
+  transform: scale(1);
+  flex-shrink: 1;
+  animation: delayed-scale 0.5s forwards;
+  animation-delay: 1s;
+  transition: animation 0.2s cubic-bezier(0.92, 0.22, 0.46, 1.32);
+}
+
+@keyframes delayed-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card__pricing--prem {
+    border: 2px solid transparent;
+    animation: none !important;
+    transform: scale(1);
+
+  }
+  .card__title--prem {
+    font-size: unset;
+  }
+}
+
+.card__title,
+.card__content {
+  color: var(--clr-primary-3);
+}
+
+.card__title--prem {
+  font-size: var(--fs-title-medium) !important;
+}
+
+.card__title {
+  display: block;
+  text-transform: capitalize;
+  font-size: clamp(28px, 4vw, 34px);
+  text-align: center;
+}
+.card__pricing-content {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.card__pricing-content--feat {
+  /* padding-left: 1.75rem; */
+  display: flex;
+  justify-content: stretch;
+  align-items: flex-start;
+}
+.card__pricing-icon {
+  transform: translateY(8%);
+  margin-right: 0.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* .card__pricing-content--feat::before {
+  content: "";
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -0.15rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/icons/check-icon.svg);
+} */
