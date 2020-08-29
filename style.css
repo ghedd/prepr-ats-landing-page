@@ -289,7 +289,6 @@ header {
   transition-delay: 0.1s;
 }
 
-
 .nav-link:focus {
   outline: 1.9px dotted var(--clr-primary-3) !important;
 }
@@ -1008,9 +1007,8 @@ textarea:focus {
   top: 14%;
 }
 
-
 /* --------------- about pg -------------- */
-    /* ------------- hero ----------- */
+/* ------------- hero ----------- */
 
 #about__hero {
   background-image: url(./assets/images/people-seated-on-table.jpg);
@@ -1057,7 +1055,8 @@ textarea:focus {
   letter-spacing: 1.25px;
 }
 
-.about__title, .about__hero-title {
+.about__title,
+.about__hero-title {
   padding-bottom: 0;
   font-size: var(--fs-title-medium);
 }
@@ -1065,8 +1064,6 @@ textarea:focus {
 .about__intro {
   font-size: var(--fs-content);
 }
-
-
 
 /* ----------- values ----------- */
 
@@ -1090,7 +1087,6 @@ textarea:focus {
   width: 50px;
   background-color: var(--clr-primary-3);
 }
-
 
 /*sections*/
 
@@ -1146,7 +1142,6 @@ textarea:focus {
   max-width: 230px;
 }
 
-
 /*media queries*/
 
 @media only screen and (max-width: 500px) {
@@ -1175,25 +1170,25 @@ textarea:focus {
     margin-top: 15px;
     max-width: none;
   }
-  
-  .about__values-section:not(:first-child):nth-child(even) p{ 
-    padding-left: 15%;
-  }  
 
-  .about__values-section:not(:first-child):nth-child(odd) p{
+  .about__values-section:not(:first-child):nth-child(even) p {
+    padding-left: 15%;
+  }
+
+  .about__values-section:not(:first-child):nth-child(odd) p {
     padding-right: 15%;
   }
-  
-  .about__values-section:not(:first-child):nth-child(odd) img{
+
+  .about__values-section:not(:first-child):nth-child(odd) img {
     margin-left: 0;
   }
 
-  .about__values-section:not(:first-child):nth-child(even) img{ 
+  .about__values-section:not(:first-child):nth-child(even) img {
     margin-right: 0;
-  }  
+  }
 
   .about__values-image {
-    width: 85%; 
+    width: 85%;
     max-width: none;
   }
 }
@@ -1253,7 +1248,6 @@ textarea:focus {
   letter-spacing: 0.5px;
 }
 
-
 @media only screen and (min-width: 1050px) {
   .about__team-section {
     flex-wrap: nowrap;
@@ -1274,13 +1268,13 @@ textarea:focus {
   }
 }
 
-
 @media only screen and (max-width: 500px) {
   .about__team {
     padding-top: 3em;
   }
 
-  .about__team-member, .about__team-middle {
+  .about__team-member,
+  .about__team-middle {
     min-width: 100px;
     width: 80%;
     margin: 2em 1em 2.5em;
