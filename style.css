@@ -517,6 +517,8 @@ header {
   background-color: var(--clr-secondary-1);
   color: var(--clr-primary-3);
   text-align: center;
+  margin-top: 60px;
+  padding-top: 4rem;
   min-height: 70vh;
   padding-bottom: 5rem;
 }
@@ -549,12 +551,17 @@ header {
   padding: 25px;
 }
 
+.feature-pic{
+  height: 560px;
+  margin-bottom: 25px;
+  padding: 25px;
+}
+
 .car-icon {
   padding-bottom: 30px;
 }
 
 .feature-title {
-  font-size: 32px;
   font-size: var(--fs-title-regular);
   font-weight: 700;
 }
