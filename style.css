@@ -171,12 +171,16 @@ button {
   outline: 1.9px dotted var(--clr-primary-3);
 }
 
-.link-button {
+.link-button,
+.link-button:visited {
   text-decoration: none;
   /* margin-bottom: var(--margin-bottom-component); */
   margin-bottom: 1.4rem;
+  color: var(--clr-secondary-3);
 }
-
+.link-button:hover {
+  color: var(--clr-primary-3)
+}
 .container {
   /* NOTE: this container should be used to wrapp
   the content only; wrapping the whole section may
