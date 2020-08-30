@@ -1485,7 +1485,6 @@ textarea:focus {
   width: 95%;
   max-width: 900px;
   min-width: 350px;
-  margin: 
 }
 
 .features__feature-list {
@@ -1527,15 +1526,6 @@ textarea:focus {
 
 
 @media only screen and (max-width: 500px) {
-  .features__customer-screens-img + .features__customer-screens-img {
-
-  }
-
-
-  .features__feature-list {
-  }
-
-
   .features__feature-item {
     width: 80%;
     text-align: center;
