@@ -1091,7 +1091,7 @@ textarea:focus {
 }
 
 .about__intro {
-  font-size: var(--fs-content);
+  font-size: var(--fs-title-regular);
 }
 
 /* ----------- values ----------- */
@@ -1142,7 +1142,7 @@ textarea:focus {
 
 .about__values-text {
   color: var(--clr-primary-3);
-  font-size: var(--fs-content);
+  font-size: var(--fs-title-regular);
   letter-spacing: 0.5px;
 }
 
@@ -1315,7 +1315,6 @@ textarea:focus {
 }
 
 /* ------------ end: about pg ------------ */
-/* -------- end: collaboration pg -------- */
 
 /* -------------- pricing pg ------------- */
 
@@ -1464,3 +1463,90 @@ textarea:focus {
   background-position: center;
   background-image: url(/assets/icons/check-icon.svg);
 } */
+
+
+/*--------- features page --------*/
+#features {
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+
+.features__title {
+  letter-spacing: 1.25px;
+  font-size: var(--fs-title-large);
+}
+
+.features__tagline {
+  margin: auto;
+  font-size: var(--fs-title-regular)
+}
+
+.features__employee-screens-img {
+  width: 95%;
+  max-width: 900px;
+  min-width: 350px;
+  margin: 
+}
+
+.features__feature-list {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.features__feature-item {
+  text-align: left;
+  width: 40%;
+}
+
+.features__feature-title {
+  font-size: clamp(26px, 3vw, 30px);
+  padding-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.features__feature-description {
+  font-size: var(--fs-content);
+}
+
+.features__customer-screens {
+  display: flex;
+  justify-content: center;
+
+}
+
+.features__customer-screens-img {
+  width: 300px;
+  max-width: 250px;
+  min-width: 125px;
+  margin: 15px;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  .features__customer-screens-img + .features__customer-screens-img {
+
+  }
+
+
+  .features__feature-list {
+  }
+
+
+  .features__feature-item {
+    width: 80%;
+    text-align: center;
+  }
+  
+  .features__customer-screens {
+    flex-wrap: wrap;
+  }
+
+  .features__customer-screens-img {
+    width: 200px;
+  }
+}
+/*------- end features page -------*/
