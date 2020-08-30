@@ -24,13 +24,13 @@ const app = () => {
     }
   });
 
-  const sections = document.querySelectorAll("section");
+  /*  const sections = document.querySelectorAll("section");
 
   const options = {
     root: null,
     // threshold: 0.5,
-    rootMargin: "-400px",
-  };
+    rootMargin: "-450px",
+  }; */
 
   // methods
 
@@ -51,7 +51,7 @@ const app = () => {
     });
   }; */
 
-  const observer = new IntersectionObserver((entries, observer) => {
+  /*  const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       const entryId = entry.target.id;
       navList.forEach((navItem) => {
@@ -66,7 +66,7 @@ const app = () => {
         }
       });
     });
-  }, options);
+  }, options); */
 
   // console.log(bodyId);
   switch (bodyId) {
@@ -182,9 +182,9 @@ const app = () => {
       });
 
       //activate observer
-      sections.forEach((section) => {
-        observer.observe(section);
-      });
+      // sections.forEach((section) => {
+      //   observer.observe(section);
+      // });
       break;
 
     default:
