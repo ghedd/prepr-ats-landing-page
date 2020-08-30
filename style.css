@@ -462,6 +462,11 @@ header {
   }
 }
 
+.nav-link--active {
+  pointer-events: none;
+  cursor: default;
+}
+
 /* ----------- END: navigation ----------- */
 
 /* ----------------- hero ---------------- */
