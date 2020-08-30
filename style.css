@@ -926,12 +926,17 @@ footer {
 
 .footer__socials-item {
   display: inline-block;
+  margin: 8px;
+}
+
+.footer__socials-link {
+  font-size: 0;
 }
 
 .footer__socials-icon {
-  margin: 25px 5px;
-  height: 35px;
   width: 35px;
+  height: 35px;
+
 }
 
 .footer__copyright {
