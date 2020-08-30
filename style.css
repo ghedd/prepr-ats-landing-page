@@ -1524,7 +1524,6 @@ textarea:focus {
 }
 
 
-
 @media only screen and (max-width: 500px) {
   .features__feature-item {
     width: 80%;
@@ -1537,6 +1536,12 @@ textarea:focus {
 
   .features__customer-screens-img {
     width: 200px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .features__feature-item {
+    width: 325px;
   }
 }
 /*------- end features page -------*/
