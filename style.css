@@ -155,7 +155,7 @@ button {
 .btn-primary {
   transition: all 0.2s ease-out;
   background-color: var(--clr-primary-1);
-  color: var(--clr-primary-2) ;
+  color: var(--clr-primary-2);
 }
 
 .btn-secondary {
@@ -1335,7 +1335,7 @@ textarea:focus {
   align-items: center;
   margin: 0 auto;
   padding: 1rem 0 4.5rem 0;
-  max-width: 1200px;
+  max-width: 960px;
 }
 
 .card {
@@ -1344,11 +1344,13 @@ textarea:focus {
   align-items: stretch;
   justify-content: space-between;
   width: 100%;
-  max-width: 290px;
+  max-width: 280px;
+  /* width: clamp(90%, 20vw, 100%); */
   min-height: 400px;
-  margin: 1.5rem auto;
-  border-radius: 10px;
-  padding: 1.5rem 1.2rem;
+  height: 100%;
+  margin: 2rem auto;
+  border-radius: 5px;
+  padding: 1.8rem 1.2rem;
   /* background-color:  var(--clr-secondary-2); */
 }
 
@@ -1366,6 +1368,7 @@ textarea:focus {
 .card__content-wrapper {
   padding-bottom: 3rem;
 }
+
 .card__pricing {
   border: 2px solid var(--clr-primary-1);
 }
