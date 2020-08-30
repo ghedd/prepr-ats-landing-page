@@ -116,10 +116,11 @@ header > nav,
 
 .content {
   font-weight: 400;
-  line-height: 1.5;
-  padding-bottom: var(--content-padding-bottom);
+  line-height: 1.7;
   max-width: 72ch;
   word-wrap: normal;
+  /* font-size: clamp(16px, 3vw, 18px); */
+  padding-bottom: var(--content-padding-bottom);
 }
 /* ----------- END: typography ----------- */
 
@@ -596,7 +597,7 @@ header {
 /* carousel */
 .carousel {
   position: relative;
-  min-height: 500px;
+  /* min-height: 500px; */
   margin: 0 auto;
   overflow: hidden;
   scrollbar-width: none;
@@ -662,7 +663,7 @@ header {
   width: 100%;
   height: 300px;
   height: calc(80vh - 2rem);
-  max-height: 500px;
+  max-height: 420px;
   /* display: flex;
   align-items: center; */
 }
@@ -703,6 +704,14 @@ header {
   font-size: var(--fs-title-medium);
   max-width: 35ch;
 }
+
+@media only screen and (max-width: 400px) {
+  .comment__title {
+    font-size: var(--fs-title-regular);
+    line-height: 1.6;
+  }
+}
+
 .comment__title::before {
   content: "\201C";
 }
@@ -713,6 +722,20 @@ header {
   text-align: center;
   font-style: italic;
 }
+
+/* truncation */
+
+.comment__content {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* keep padding 0 to achieve the effect */
+  padding-bottom: 0;
+  margin-bottom: 1.2rem;
+}
+
 .comment__author-name,
 .comment__source {
   font-size: var(--fs-title-small);
@@ -754,7 +777,7 @@ header {
   min-height: 30px;
   height: auto;
 
-  margin-bottom: calc(var(--margin-bottom-component) + 0.2vw);
+  /* margin-bottom: calc(var(--margin-bottom-component) + 0.2vw); */
 }
 .nav-panel__dot {
   height: 15px;
@@ -982,6 +1005,9 @@ footer {
 .collaborate__content-body {
   /* text-transform: capitalize; */
   color: var(--clr-primary-3);
+}
+.collaborate__title {
+  text-align: center;
 }
 .collaborate__subtitle {
   font-size: var(--fs-title-medium);
