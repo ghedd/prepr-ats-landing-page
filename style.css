@@ -1492,19 +1492,26 @@ textarea:focus {
 
 
 /*--------- features page --------*/
-#features {
-  margin-top: 1em;
-  padding-bottom: 1em;
+#features__section {
+  background-color: var(--clr-secondary-1);
+  color: var(--clr-primary-3);
+  text-align: center;
+  margin-top: 60px;
+  
+  min-height: 70vh;
+  padding-bottom: 5rem;
 }
 
 .features__title {
+  padding-top: 1em;
   letter-spacing: 1.25px;
   font-size: var(--fs-title-large);
 }
 
 .features__tagline {
   margin: auto;
-  font-size: var(--fs-title-regular)
+  font-size: var(--fs-title-regular);
+  width: 80%
 }
 
 .features__employee-screens-img {
@@ -1518,7 +1525,7 @@ textarea:focus {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 35px;
+  margin: 35px;
 }
 
 .features__feature-item {
