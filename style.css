@@ -1174,21 +1174,14 @@ textarea:focus {
 
 .about__values-title {
   font-size: var(--fs-title-regular);
-  background-color: var(--clr-primary-3);
   font-family: "Passion One", cursive;
   font-size: 28px;
   padding: 4px;
-  color: var(--clr-secondary-1);
 }
 
 .about__values-description {
   margin-top: 15px;
   max-width: 230px;
-}
-
-.about__values-section:not(:first-child):nth-child(odd) .about__values-title {
-  background-color: var(--clr-primary-3);
-  color: var(--clr-primary-2);
 }
 
 .about__values-image {
@@ -1331,8 +1324,17 @@ textarea:focus {
   .about__team-member,
   .about__team-middle {
     min-width: 100px;
+  }
+
+  .about__team-member {
+
     width: 80%;
     margin: 2em 1em 2.5em;
+  }
+
+  .about__team-middle {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about__team-member:last-child {
