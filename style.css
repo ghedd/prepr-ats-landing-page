@@ -580,7 +580,7 @@ header {
 }
 
 .feature-title {
-  font-size: var(--fs-title-regular);
+  font-size: var(--fs-title-medium);
   font-weight: 700;
 }
 
